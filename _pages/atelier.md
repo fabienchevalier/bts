@@ -15,8 +15,6 @@ toc_icon: "cog"
 
 > Le tableau de synthèse des compétences de l'épreuve E4 résume l'ensemble des projets et activités effectués à l'école ainsi qu'en entreprise. 
 
-> **NOTE:** En outre, j'ai l'habitude de me former régulièrement en autonomie sur différentes technologies. J'ai résumé tout cela sur une page dédiée [disponible ici](/competences/)
-
 ### Téléchargement
 
 
