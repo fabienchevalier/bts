@@ -29,9 +29,9 @@ toc_icon: "cog"
 - [Activité 01 : Mise en place d'un réseau WorkGroup, partages et autorisations](/bts/assets/files/atelier/ecole/01-mise_en_place_workgroup.docx)
 - [Activité 02 : Automatisation de la création d'utilisateur dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/02-ad_powershell_csv.docx)
   - _[AdUser.ps1](/bts/assets/files/atelier/ecole/02-AdUser.ps1)_
-- [Activité 03 : Mise en place d’un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/03serveur_dhcp_windows.docx)
+- [Activité 03 : Mise en place d’un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/03-serveur_dhcp_windows.docx)
 - [Activité 04 : Mise en place d'un site web portofolio avec GitHub et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.docx)
-- [Activité 05 : Déploiement  d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/05-mise_en_place_site_web.docx)
+- [Activité 05 : Déploiement  d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/05-ldap_active_directory.docx)
 - [Activité 06 : Refonte du réseau de la M2L (simulation Packet Tracer)](/bts/assets/files/atelier/ecole/06-routage_intervlan.docx)
   - _[routage_intervlan.pkt](/bts/assets/files/atelier/ecole/06-routage_intervlan.pkt)_
 - [Activité 07 : Installation de GLPI et déploiement de l'agent Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.docx)
