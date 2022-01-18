@@ -13,7 +13,9 @@ header:
           url : "/assets/files/atelier/synthese_fabien_chevalier.xlsx"
         - label : "Dossier E4"
           url : "/atelier/"
-author_profile: true
+toc_sticky: true
+toc_label: "Sommaire"
+toc_icon: "cog"
 ---
 <h1 id="fabien-chevalier-portofolio-bts-sio-option-sisr">Portofolio : BTS SIO option SISR</h1>
 <p>Ce portofolio regroupe l&#39;ensemble des projets et activités effectués dans le cadre de mon BTS SIO option SISR. Ce site web est hébergé par GitHub et à été construit à partir du template <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistake</a>. Les sources du site web sont consultables sur <a href="https://github.com/fabienchevalier/fabienchevalier.github.io">mon profil GitHub</a>.</p>
