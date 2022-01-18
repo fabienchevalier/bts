@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Fabien CHEVALIER"
   avatar : "/assets/images/bio-photo.jpeg"
-  bio    : "Fabien, 27 ans, passionné par l'informatique, le webdesign, le cloud et les nouvelles technologies."
+  bio    : "Fabien, 27 ans, passionné par l'informatique, je cultive un interêt particulier pour la méthode DevOps."
   links:
     - label: "Saint-Germain-en-Laye"
       icon: "fas fa-fw fa-map-marker-alt"
