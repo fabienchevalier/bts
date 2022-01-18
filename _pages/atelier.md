@@ -37,8 +37,8 @@ toc_icon: "cog"
 - [Activité 07 : Installation de GLPI et déploiement de l'agent Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.docx)
 - [Activité 08 : Réalisation d'une infrastructure intégrant la VOIP avec PacketTracer](/bts//assets/files/atelier/ecole/08-voip_pkt.docx)
   - _[toip.pkt](/bts/assets/files/atelier/ecole/08-voip.pkt)_
-- [Activité 09 : Mise en place des protocoles OSPF et HSRP sur des routeurs CISCO](/bts/assets/files/atelier/ecole/09-ospf_hsrp.docx)
-  - _[ospf-hsrp.pjt](/bts//assets/files/atelier/09-ospf-hsrp.pkt)
+- [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.docx)
+  - _[ospf-hsrp.pkt](/bts//assets/files/atelier/09-ospf_cisco.pkt)
 - [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp-docker.docx)
 
 ## Activités réalisées en entreprise
