@@ -29,3 +29,9 @@ Ce portofolio regroupe l'ensemble des projets et activités effectués dans le c
 - [Réalisations professionnelles](/bts/e5)
 - [Veille technologique](/bts/veille) 
 
+### Autres liens
+
+- [fchevalier.net][https://fchevalier.net]
+- [LinkedIn][https://www.linkedin.com/in/fabche/]
+- [contact@fchevalier.net][mailto:contact@fchevalier.net]
+
