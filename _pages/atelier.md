@@ -52,6 +52,8 @@ toc_icon: "cog"
 - [Activité 01 : Missions helpdesk et ticketing avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.docx)
 - [Activité 02 : Monitoring et gestion à distance du parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.docx)
 - [Activité 03 : Mise en place d'un hébergement client (serveur RDS distant)](/bts/assets/files/atelier/entreprise/03-hebergement_client.docx)
+- [Activité 04 : Migration d'une VM cliente sur un nouvel HyperViseur](/bts/assets/files/atelir/entreprise/04-migration_hyperv.docx)
+
 
 
 
