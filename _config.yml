@@ -23,6 +23,8 @@ github_username: username
 minimal_mistakes_skin: default
 search: false
 locale: "fr"
+url: "https://fchevalier.net"
+baseurl: "/bts"
 
 # Build settings
 markdown: kramdown
