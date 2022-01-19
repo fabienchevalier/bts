@@ -1,7 +1,13 @@
 var store = [{
-        "title": "Writing Jekyll Posts",
-        "excerpt":"blablabla  ","categories": [],
+        "title": "Organisation de ma veille technologique",
+        "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/bts/writing-jekyll-posts/",
+        "url": "/bts/outils_veille/",
+        "teaser": null
+      },{
+        "title": "Docker",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/bts/docker/",
         "teaser": null
       }]
