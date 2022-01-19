@@ -14,6 +14,7 @@ header:
         - label : "Dossier E4"
           url : "/atelier/"
 author_profile: true
+classes: wide
 ---
 ## Portofolio : BTS SIO option SISR
 
@@ -27,7 +28,7 @@ Ce portofolio regroupe l'ensemble des projets et activités effectués dans le c
 - [Parcours de professionnalisation (E4)](/bts/ppe)
 - [Atelier de professionnalisation (E4)](/bts/atelier)
 - [Réalisations professionnelles](/bts/e5)
-- [Veille technologique](/bts/veille) 
+- [Veille informationnelle](/bts/veille) 
 
 ### Autres liens
 
