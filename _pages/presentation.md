@@ -1,9 +1,10 @@
 ---
 layout: single
 title: Qui suis-je?
+excerpt: Mon profil, mes expériences
 header:
     overlay_image: /assets/images/header.jpg
-    overlay_filter: 0.5
+    overlay_filter: 0.6
 permalink: /presentation/
 toc: true
 toc_sticky: true

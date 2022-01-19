@@ -1,9 +1,10 @@
 ---
 layout: single
 title: Ateliers de professionnalisation (E4)
+excerpt: Tableau de synthèse, activités en formation et entreprise
 header:
     overlay_image: /assets/images/header.jpg
-    overlay_filter: 0.5
+    overlay_filter: 0.6
 permalink: /atelier/
 toc: true
 toc_sticky: true

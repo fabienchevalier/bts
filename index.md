@@ -7,7 +7,7 @@ title: Fabien CHEVALIER
 excerpt: "Alternant en BTS SIO option SISR"
 header:
     overlay_image: /assets/images/header.jpg
-    overlay_filter: 0.5
+    overlay_filter: 0.6
     actions:
         - label: "Tableau de synthèse E4"
           url : "/assets/files/atelier/synthese_fabien_chevalier.xlsx"

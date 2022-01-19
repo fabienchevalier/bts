@@ -1,9 +1,10 @@
 ---
 layout: single
 title: Parcours de professionnalisation (E4)
+excerpt: Travaux dirigés en mode projet sur le contexte de la M2L
 header:
     overlay_image: /assets/images/header.jpg
-    overlay_filter: 0.5
+    overlay_filter: 0.6
 permalink: /ppe/
 toc: true
 toc_sticky: true
