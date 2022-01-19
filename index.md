@@ -27,7 +27,7 @@ Ce portofolio regroupe l'ensemble des projets et activités effectués dans le c
 - [Qui suis-je?](/bts/presentation)
 - [Parcours de professionnalisation (E4)](/bts/ppe)
 - [Atelier de professionnalisation (E4)](/bts/atelier)
-- [Réalisations professionnelles](/bts/e5)
+- [Réalisations professionnelles (E5)](/bts/e5)
 - [Veille informationnelle](/bts/veille) 
 
 ### Autres liens
