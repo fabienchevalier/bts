@@ -27,7 +27,7 @@ Diplômé du BAFA à 16 ans, ma première expérience de travail se fit en tant 
 
 ### Présentation de l'entreprise
 
-> NS2B est une société basée à Poissy en métropole, mais aussi présente dans les DOMs (Réunion et Antilles), spécialisée dans l’intégration de solution de gestions, l’infogérance et la gestion d’entreprises. Mes fonctions au sein du groupe sont diverses et variées, mais j’assure en majorité des fonctions d’administration système et réseaux. L’entreprise propose à ses clients différents services type SaaS, comme la fourniture d’un bureau à distance complet sous Windows, des systèmes de sauvegarde historisées sur des Datacenter sécurisés, où encore un logiciel de comptabilité collaborative dans le cloud.
+> NS2B est une société basée à Poissy en métropole, mais aussi présente dans les DOMs (Réunion et Antilles), spécialisée dans l’intégration de solution de gestions, l’infogérance et la gestion d’entreprises. L’entreprise propose à ses clients différents services type SaaS, comme la fourniture d’un bureau à distance complet sous Windows, des systèmes de sauvegarde historisées sur des Datacenter sécurisés, où encore un logiciel de comptabilité collaborative dans le cloud.
 
 ### Mes missions au sein du groupe
 
