@@ -5,6 +5,11 @@ excerpt: Tableau de synthèse, activités en formation et entreprise
 header:
     overlay_image: /assets/images/header.jpg
     overlay_filter: 0.6
+    actions:
+        - label: "Télécharger le tableau de synthèse (E4)"
+          url : "/assets/files/atelier/synthese_fabien_chevalier.xlsx"
+        - label : "Télécharger le dossier d'activités complet (E4)"
+          url : "/atelier/"
 permalink: /atelier/
 toc: true
 toc_sticky: true
@@ -40,7 +45,7 @@ toc_icon: "cog"
   - _[toip.pkt](/bts/assets/files/atelier/ecole/08-voip.pkt)_
 - [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.docx)
   - _[ospf-hsrp.pkt](/bts//assets/files/atelier/09-ospf_cisco.pkt)
-- [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp-docker.docx)
+- [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp_docker.docx)
 
 ## Activités réalisées en entreprise
 
@@ -52,8 +57,18 @@ toc_icon: "cog"
 
 - [Activité 01 : Missions helpdesk et ticketing avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.docx)
 - [Activité 02 : Monitoring et gestion à distance du parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.docx)
-- [Activité 03 : Mise en place d'un hébergement client (serveur RDS distant)](/bts/assets/files/atelier/entreprise/03-hebergement_client.docx)
-- [Activité 04 : Migration d'une VM cliente sur un nouvel HyperViseur](/bts/assets/files/atelir/entreprise/04-migration_hyperv.docx)
+- [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.docx)
+- [Activité 04 : Déploiement de postes en clientèle](/bts/assets/files/atelir/entreprise/04-postes_clients.docx)
+- [Activité 05 : Mise en place d'une solution de sauvegarde distante](/bts/assets/files/atelir/entreprise/05-sauvegarde_cloud.docx)
+- [Activité 06 : Mise en place d'une solution de redondance serveur](/bts/assets/files/atelir/entreprise/06-replication_hyperV.docx)
+
+### Deuxième année
+
+> Cette section regroupe l'ensemble des activités réalisés en entreprise en première année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités.
+
+
+
+
 
 
 
