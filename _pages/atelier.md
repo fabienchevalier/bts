@@ -32,20 +32,21 @@ toc_icon: "cog"
 
 > Il est aussi possible de télécharger une archive ZIP de l'ensemble des activités école en [cliquant ici](dossier_complet.zip)
 
-- [Activité 01 : Mise en place d'un réseau WorkGroup, partages et autorisations](/bts/assets/files/atelier/ecole/01-mise_en_place_workgroup.docx)
-- [Activité 02 : Automatisation de la création d'utilisateur dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/02-ad_powershell_csv.docx)
-  - _[AdUser.ps1](/bts/assets/files/atelier/ecole/02-AdUser.ps1)_
-- [Activité 03 : Mise en place d’un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/03-serveur_dhcp_windows.docx)
-- [Activité 04 : Mise en place d'un site web portofolio avec GitHub et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.docx)
-- [Activité 05 : Déploiement  d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/05-ldap_active_directory.docx)
-- [Activité 06 : Refonte du réseau de la M2L (simulation Packet Tracer)](/bts/assets/files/atelier/ecole/06-routage_intervlan.docx)
+- [Activité 01 : Déploiement d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/01-ldap_active_directory.docx)
+- [Activité 02 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/02-veille.docx)
+- [Activité 03 : Automatisation de la création d'utilisateurs dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/03-ad_powershell_csv.docx)
+  - _[AdUser.ps1](/bts/assets/files/atelier/ecole/03-ad_user.ps1)_
+- [Activité 04 : Mise en place d'un site web portofolio avec GitHub Pages et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.docx)
+- [Activité 05 : Mise en place d'un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/05-serveur_dhcp_windows.docx)
+- [Activité 06 : Refonte du réseau de la M2L (routage intervlan CISCO)](/bts/assets/files/atelier/ecole/06-routage_intervlan.docx)
   - _[routage_intervlan.pkt](/bts/assets/files/atelier/ecole/06-routage_intervlan.pkt)_
-- [Activité 07 : Installation de GLPI et déploiement de l'agent Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.docx)
+- [Activité 07 : Déploiement de GLPI et du plugin Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.docx)
 - [Activité 08 : Réalisation d'une infrastructure intégrant la VOIP avec PacketTracer](/bts//assets/files/atelier/ecole/08-voip_pkt.docx)
   - _[toip.pkt](/bts/assets/files/atelier/ecole/08-voip.pkt)_
 - [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.docx)
   - _[ospf-hsrp.pkt](/bts//assets/files/atelier/09-ospf_cisco.pkt)
 - [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp_docker.docx)
+- [Activité 11 : Gestion de projet : mise en place de l'infrastructure pour l'épreuve E5](/bts/assets/files/atelier/ecole/11-gestion_projet.docx)
 
 ## Activités réalisées en entreprise
 

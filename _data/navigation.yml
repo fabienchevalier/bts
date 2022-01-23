@@ -10,5 +10,6 @@ main:
     description: "Tableau de synthèse des compétences ainsi que les activités réalisés en classe et en entreprise"
   - title: "Réalisations Pro (E5)"
     description: "Réalisations de projet pour la soutenance à l'oral (épreuve E5)"
+    url: /realisations/
   - title: "Veille"
     url: /veille/
