@@ -21,16 +21,13 @@ toc_icon: "cog"
 
 > Le tableau de synthèse des compétences de l'épreuve E4 résume l'ensemble des projets et activités effectués à l'école ainsi qu'en entreprise. 
 
-### Téléchargement
-
-
 [Télécharger mon tableau de compétences (.xlsx)](/bts/assets/files/atelier/synthese_fabien_chevalier.xlsx)
 
 ## Activités réalisés en formation
 
-> Cette section regroupe l'ensemble des activités réalisés au cours de ma formation. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Certaines activités incluent des annexes aussi téléchargeables.
+Cette section regroupe l'ensemble des activités réalisés au cours de ma formation. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Certaines activités incluent des annexes aussi téléchargeables.
 
-> Il est aussi possible de télécharger une archive ZIP de l'ensemble des activités école en [cliquant ici](dossier_complet.zip)
+> Il est possible de télécharger l'archive complète contenant l'ensemble des projets (école et entreprise) via le bouton situé en haut de page
 
 - [Activité 01 : Déploiement d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/01-ldap_active_directory.docx)
 - [Activité 02 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/02-veille.docx)
@@ -52,20 +49,27 @@ toc_icon: "cog"
 
 ### Première année
 
-> Cette section regroupe l'ensemble des activités réalisés en entreprise en première année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités.
+Cette section regroupe l'ensemble des activités réalisés en entreprise en deuxième année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités.
 
-> Il est aussi possible de télécharger une archive ZIP de l'ensemble des activités entreprise en [cliquant ici](dossier_complet.zip)
-
-- [Activité 01 : Missions helpdesk et ticketing avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.docx)
-- [Activité 02 : Monitoring et gestion à distance du parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.docx)
+- [Activité 01 : Helpdesk et gestion d'incidents avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.docx)
+- [Activité 02 : Monitoring, inventaire et gestion à distance d'un parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.docx)
 - [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.docx)
 - [Activité 04 : Déploiement de postes en clientèle](/bts/assets/files/atelir/entreprise/04-postes_clients.docx)
-- [Activité 05 : Mise en place d'une solution de sauvegarde distante](/bts/assets/files/atelir/entreprise/05-sauvegarde_cloud.docx)
-- [Activité 06 : Mise en place d'une solution de redondance serveur](/bts/assets/files/atelir/entreprise/06-replication_hyperV.docx)
+- [Activité 05 : Restauration de documents depuis les serveurs de sauvegarde de l'entreprise](/bts/assets/files/atelir/entreprise/05-sauvegarde_cloud.docx)
+- [Activité 06 : Mise en place du système de redondance pour les VM clientes](/bts/assets/files/atelir/entreprise/06-replication_hyperV.docx)
+- [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelir/entreprise/07-planification.docx)
 
 ### Deuxième année
 
-> Cette section regroupe l'ensemble des activités réalisés en entreprise en première année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités.
+Cette section regroupe l'ensemble des activités réalisés en entreprise en première année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités.
+
+- [Activité 08 : Audit d'un système d'information et identifications des besoins du client]()
+- [Activité 09 : Identification d'un panne matérielle et résolution d'un incident réseau]()
+- [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise]()
+- [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
+- [Activité 12 : Migration d''une boîte mail vers Exchange Online]()
+- [Activité 13 : Migration d''une boîte mail vers Exchange Online]()
+- [Activité 14 : Migration d'une VM cliente sur un nouveau serveur]()
 
 
 
