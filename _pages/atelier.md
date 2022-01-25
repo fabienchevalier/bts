@@ -65,7 +65,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 
 - [Activité 08 : Audit d'un système d'information et identifications des besoins du client](/bts/assets/files/atelier/entreprise/08-audit.docx)
   - _[audit.pdf](/bts/assets/files/atelier/entreprise/08-audit.pdf)_
-- [Activité 09 : Identification d'un panne matérielle et résolution d'un incident réseau]()
+- [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2]()
 - [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise]()
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
 - [Activité 12 : Migration d''une boîte mail vers Exchange Online]()
