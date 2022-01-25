@@ -69,7 +69,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise]()
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
 - [Activité 12 : Migration d''une boîte mail vers Exchange Online]()
-- [Activité 13 : Détection d'incidents sur le parc de VM hébergés (prévention des risques)]()
+- [Activité 13 : Mise en place d'un service de scan vers le CLOUD NS2B]()
 
 
 
