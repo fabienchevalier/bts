@@ -11,6 +11,12 @@ var store = [{
         "url": "/bts/juridique/infogerance/",
         "teaser": null
       },{
+        "title": "Kubernetes : La plateforme d'orchestration de containers",
+        "excerpt":"Qu’est-ce que Kubernetes? Le principe d’un orchestrateur Un orchestrateur, comme son nom l’indique agit comme une sorte de chef d’orchestre. Dans notre cas, il permet d’automatiser et de configurer le déploiement d’applications multi-container. En effet, beaucoup d’applications reposent sur différents services tournant dans différents containeurs (serveur web apache, base de...","categories": ["DevOps"],
+        "tags": [],
+        "url": "/bts/devops/kubernetes/",
+        "teaser": null
+      },{
         "title": "1,1 Md'€ d'amendes liées à l'application du RGPD en Europe en 2021",
         "excerpt":"Qu’est-ce que le RGPD? La notion de donnée personnelle Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ». Une personne peut être identifiée: directement: par son nom ou son prénom indirectement: par un indentifiant client, un numéro de téléphone, la...","categories": ["Juridique"],
         "tags": [],

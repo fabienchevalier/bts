@@ -57,7 +57,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 04 : Migration d'une VM cliente sur un nouveau serveur](/bts/assets/files/atelir/entreprise/04-migration_hyperv.docx)
 - [Activité 05 : Mise en place d'une solution de sauvegarde de fichiers dans le cloud NS2B](/bts/assets/files/atelier/entreprise/05-sauvegarde_cloud.docx)
 - [Activité 06 : Mise en place de la réplication des serveurs de sauvegardes](/bts/assets/files/atelir/entreprise/06-replication_hyperV.docx)
-- [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelir/entreprise/07-planification.docx)
+- [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelier/entreprise/07-planification.docx)
 
 ### Deuxième année
 
@@ -65,7 +65,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 
 - [Activité 08 : Audit d'un système d'information et identifications des besoins du client](/bts/assets/files/atelier/entreprise/08-audit.docx)
   - _[audit.pdf](/bts/assets/files/atelier/entreprise/08-audit.pdf)_
-- [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2]()
+- [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.docx)
 - [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise]()
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
 - [Activité 12 : Migration d''une boîte mail vers Exchange Online]()
