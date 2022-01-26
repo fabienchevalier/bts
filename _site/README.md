@@ -1,4 +1,7 @@
-# Portofolio BTS SIO SISR
+# Hello :wave:
 
-Website powered by GitHube Page and the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
+I built this portofolio during my advanced technician's certificate degree. Feel free to share/modify/copy anything that could help you in any way possible. Wanna get in touch with me? You can e-mail me at hello[at]fchevalier.net. 
+
+Website is accessible via this link : [https://fchevalier.net/bts](https://fchevalier.net/bts) (in French)
+
 
