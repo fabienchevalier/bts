@@ -11,8 +11,11 @@ toc_label: "Table des matières"
 toc_icon: "cog"
 ---
 # Un contrat d'infogérance, mais pourquoi?
+
 ## Définition
+
 ![enter image description here](https://www.crt.fr/wp-content/uploads/2018/08/infogerance.png)
+
 Un contrat d'infogérance permet à des sociétés de toutes tailles et secteurs d'externalisation la gestion de leur informatique. Concrètement, cela permet aux entreprise de se recentrer sur leur coeur de métier en transférant la charge liée à la maintenance informatique à une entreprise spécialisée tierce.
 
 ## En quoi la bonne rédaction du contrat d'infogérance est importante pour une entreprise informatique

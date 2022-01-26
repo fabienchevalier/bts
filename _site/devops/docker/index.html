@@ -180,7 +180,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          moins de 1 minute(s) de lecture
+          1 minute(s) de lecture
         
       </span>
     
@@ -325,7 +325,29 @@
 
       <section class="page__content e-content" itemprop="text">
         
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
+              <ul class="toc__menu"><li><a href="#quest-ce-que-docker">Qu’est-ce que Docker?</a><ul><li><a href="#conteneurisation--principe">Conteneurisation : principe</a></li><li><a href="#différences-entre-docker-et-les-conteneurs-traditionnels-linux">Différences entre Docker et les conteneurs traditionnels Linux</a></li><li><a href="#les-limites-de-lutilisation-de-docker">Les limites de l’utilisation de Docker</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
         
+        <h1 id="quest-ce-que-docker">Qu’est-ce que Docker?</h1>
+<h2 id="conteneurisation--principe">Conteneurisation : principe</h2>
+
+<p><img src="https://d1fmx1rbmqrxrr.cloudfront.net/zdnet/i/edit/ne/2014/08/vmware_docker.jpg" alt="schéma-conteneur" /></p>
+
+<p>La conteneurisation est une méthode qui permet de virtualiser, dans un conteneur, les ressources matérielles ‒ systèmes de fichiers, réseau, processeur, mémoire vive, etc. ‒ nécessaires à l’exécution d’une application. Dans cet espace sont aussi stockées toutes les dépendances des applications : fichiers, bibliothèques, etc. Pour déplacer les applications virtuelles d’un système d’exploitation à un autre, le conteneur se connecte à leur noyau (<em>kernel</em>), ce qui permet aux différents composants matériels et logiciels de communiquer entre eux <em><a href="https://hellofuture.orange.com/fr/comment-la-conteneurisation-informatique-accelere-le-developpement-des-applications/#:~:text=La%20conteneurisation%20est%20une%20m%C3%A9thode,processeur,%20m%C3%A9moire%20vive,%20etc.&amp;text=Dans%20cet%20espace%20sont%20aussi,:%20fichiers,%20biblioth%C3%A8ques,%20etc.">(source)</a></em>. Là ou une VM classique émule une machine physique et nécessite un système d’exploitation virtualisé pour fonctionner, la conteneurisation utilise les ressources déjà présente sur l’hôte <strong>sans passer par la case virtualisation</strong>. Cela allège considérablement la taille du containeur par rapport à une VM classique, tout améliorant ses performances (on dit qu’un système virtualisé perds 7 à 8% de ses performances comparé à un système non virtualisé).</p>
+
+<h2 id="différences-entre-docker-et-les-conteneurs-traditionnels-linux">Différences entre Docker et les conteneurs traditionnels Linux</h2>
+
+<p>À l’origine, la technologie Docker a été créée sur la base de la technologie <a href="https://linuxcontainers.org/">LXC</a>, que la plupart des utilisateurs associent aux conteneurs Linux « traditionnels », mais elle s’est depuis émancipée. LXC était un outil de virtualisation léger très utile, mais il n’offrait pas une expérience à la hauteur pour les utilisateurs ou les développeurs. La technologie Docker permet non seulement d’exécuter des conteneurs, mais aussi de simplifier leur conception et leur fabrication, l’envoi d’images, le contrôle des versions d’image, etc.</p>
+
+<h2 id="les-limites-de-lutilisation-de-docker">Les limites de l’utilisation de Docker</h2>
+
+<p>De part son approche très modulaire (par couches de composants), la maintenance d’une application complexe peut vite devenir un calvaire. C’est là que des orchestrateurs comme Kubernetes interviennent afin de permettre de gérer des services applicatifs sur plusieurs conteneurs.</p>
+
 
         
       </section>
@@ -375,7 +397,7 @@
       <a href="#" class="pagination--pager disabled">Précédent</a>
     
     
-      <a href="/bts/juridique/rgpd/" class="pagination--pager" title="1,1 Md’€ d’amendes liées à l’application du RGPD en Europe en 2021
+      <a href="/bts/juridique/infogerance/" class="pagination--pager" title="Contrat d’infogérance informatique : ce qu’il faut savoir
 ">Suivant</a>
     
   </nav>
@@ -427,6 +449,45 @@
 
     <p class="archive__item-excerpt" itemprop="description">Les autorités de protection des données personnelles ont reçu 130 000 notifications pour violation de données personnelles en Europe en 2021…
 </p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/bts/juridique/infogerance/" rel="permalink">Contrat d’infogérance informatique : ce qu’il faut savoir
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          moins de 1 minute(s) de lecture
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur ...</p>
   </article>
 </div>
 
