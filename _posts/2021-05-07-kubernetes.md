@@ -31,5 +31,8 @@ C'est le point d'entrée des administrateurs pour gérer les différents noeuds.
 ### Le cluster
 Un cluster Kubernete, c'est l'ensemble des 3 composants cités ci-dessus réunis.
 
+# Comment et pourquoi Kubernetes est-il utilisé dans des environnements de production?
+
+En production, Kubernete permet l'automatisation des processus manuels d'hébergement et de déploiement de conteneurs. Aussi, il facilite grandement le transfert des applications depuis l'environnement de développement vers l'environnement de production. Concrètement, Kubernetes permet aux développeurs de ne plus se soucier de l'infrastructure sur laquelle ils codent. Il permet aussi de surveiller, monitorer et assurer une haute disponibilité des ressources. Ainsi, un développeur aura uniquement à se soucier de sa propre création de nouvelles fonctionnalités et non de la stabilité de l’infrastructure lors du déploiement de ses fonctionnalités.
 
 
