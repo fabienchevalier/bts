@@ -66,7 +66,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 08 : Audit d'un système d'information et identifications des besoins du client](/bts/assets/files/atelier/entreprise/08-audit.docx)
   - _[audit.pdf](/bts/assets/files/atelier/entreprise/08-audit.pdf)_
 - [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.docx)
-- [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing)
+- [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing.docx)
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
 - [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisée et authentifcation MFA]()
 - [Activité 13 : Mise en place d'un service de scan réseau](/bts/assets/files/atelier/entreprise/09-scan_over_ftp.docx)
