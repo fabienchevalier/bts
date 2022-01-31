@@ -25,25 +25,25 @@ toc_icon: "cog"
 
 ## Activités réalisés en formation
 
-Cette section regroupe l'ensemble des activités réalisés au cours de ma formation. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Certaines activités incluent des annexes aussi téléchargeables.
+Cette section regroupe l'ensemble des activités réalisés au cours de ma formation. Chaque production est téléchargeable via un lien direct au format PDF en cliquant sur le lien. Certaines activités incluent des annexes aussi téléchargeables.
 
 > Il est possible de télécharger l'archive complète contenant l'ensemble des projets (école et entreprise) via le bouton situé en haut de page
 
-- [Activité 01 : Déploiement d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/01-ldap_active_directory.docx)
-- [Activité 02 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/02-veille.docx)
-- [Activité 03 : Automatisation de la création d'utilisateurs dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/03-ad_powershell_csv.docx)
+- [Activité 01 : Déploiement d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/01-ldap_active_directory.pdf)
+- [Activité 02 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/02-veille.pdf)
+- [Activité 03 : Automatisation de la création d'utilisateurs dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/03-ad_powershell_csv.pdf)
   - _[AdUser.ps1](/bts/assets/files/atelier/ecole/03-ad_user.ps1)_
-- [Activité 04 : Mise en place d'un site web portofolio avec GitHub Pages et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.docx)
-- [Activité 05 : Mise en place d'un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/05-serveur_dhcp_windows.docx)
-- [Activité 06 : Refonte du réseau de la M2L (routage intervlan CISCO)](/bts/assets/files/atelier/ecole/06-routage_intervlan.docx)
+- [Activité 04 : Mise en place d'un site web portofolio avec GitHub Pages et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.pdf)
+- [Activité 05 : Mise en place d'un serveur DHCP sous Windows Server](/bts/assets/files/atelier/ecole/05-serveur_dhcp_windows.pdf)
+- [Activité 06 : Refonte du réseau de la M2L (routage intervlan CISCO)](/bts/assets/files/atelier/ecole/06-routage_intervlan.pdf)
   - _[routage_intervlan.pkt](/bts/assets/files/atelier/ecole/06-routage_intervlan.pkt)_
-- [Activité 07 : Déploiement de GLPI et du plugin Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.docx)
-- [Activité 08 : Réalisation d'une infrastructure intégrant la VOIP avec PacketTracer](/bts//assets/files/atelier/ecole/08-voip_pkt.docx)
+- [Activité 07 : Déploiement de GLPI et du plugin Fusion-Inventory](/bts//assets/files/atelier/ecole/07-glpi_fusion.pdf)
+- [Activité 08 : Réalisation d'une infrastructure intégrant la VOIP avec PacketTracer](/bts//assets/files/atelier/ecole/08-voip_pkt.pdf)
   - _[toip.pkt](/bts/assets/files/atelier/ecole/08-voip.pkt)_
-- [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.docx)
+- [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.pdf)
   - _[ospf-hsrp.pkt](/bts//assets/files/atelier/09-ospf_cisco.pkt)
-- [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp_docker.docx)
-- [Activité 11 : Gestion de projet : mise en place de l'infrastructure pour l'épreuve E5](/bts/assets/files/atelier/ecole/11-gestion_projet.docx)
+- [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp_docker.pdf)
+- [Activité 11 : Gestion de projet : mise en place de l'infrastructure pour l'épreuve E5](/bts/assets/files/atelier/ecole/11-gestion_projet.pdf)
 
 ## Activités réalisées en entreprise
 
