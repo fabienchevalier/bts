@@ -49,27 +49,27 @@ Cette section regroupe l'ensemble des activités réalisés au cours de ma forma
 
 ### Première année
 
-Cette section regroupe l'ensemble des activités réalisés en entreprise en deuxième année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités. Certaines activités incluent des annexes aussi téléchargeables.
+Cette section regroupe l'ensemble des activités réalisés en entreprise en deuxième année. Chaque production est téléchargeable via un lien direct au format PDF en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités. Certaines activités incluent des annexes aussi téléchargeables.
 
-- [Activité 01 : Helpdesk et gestion d'incidents avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.docx)
-- [Activité 02 : Monitoring, inventaire et gestion à distance d'un parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.docx)
-- [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.docx)
-- [Activité 04 : Migration d'une VM cliente sur un nouveau serveur](/bts/assets/files/atelier/entreprise/04-migration_hyperv.docx)
-- [Activité 05 : Mise en place d'une solution de sauvegarde de fichiers dans le cloud NS2B](/bts/assets/files/atelier/entreprise/05-sauvegarde_cloud.docx)
-- [Activité 06 : Mise en place de la réplication des serveurs de sauvegardes](/bts/assets/files/atelir/entreprise/06-replication_hyperV.docx)
-- [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelier/entreprise/07-planification.docx)
+- [Activité 01 : Helpdesk et gestion d'incidents avec GLPI](/bts/assets/files/atelier/entreprise/01-helpdesk_glpi.pdf)
+- [Activité 02 : Monitoring, inventaire et gestion à distance d'un parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.pdf))
+- [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.pdf))
+- [Activité 04 : Migration d'une VM cliente sur un nouveau serveur](/bts/assets/files/atelier/entreprise/04-migration_hyperv.pdf))
+- [Activité 05 : Mise en place d'une solution de sauvegarde de fichiers dans le cloud NS2B](/bts/assets/files/atelier/entreprise/05-sauvegarde_cloud.pdf))
+- [Activité 06 : Mise en place de la réplication des serveurs de sauvegardes](/bts/assets/files/atelir/entreprise/06-replication_hyperV.pdf))
+- [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelier/entreprise/07-planification.pdf))
 
 ### Deuxième année
 
-Cette section regroupe l'ensemble des activités réalisés en entreprise en deuxième année. Chaque production est téléchargeable via un lien direct au format Word (.docx) en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités. Certaines activités incluent des annexes aussi téléchargeables.
+Cette section regroupe l'ensemble des activités réalisés en entreprise en deuxième année. Chaque production est téléchargeable via un lien direct au format PDF en cliquant sur le lien. Les documents sont protégés par un mot de passe communiqué au jury pour des raisons de confidentialités. Certaines activités incluent des annexes aussi téléchargeables.
 
-- [Activité 08 : Audit d'un système d'information et identifications des besoins du client](/bts/assets/files/atelier/entreprise/08-audit.docx)
+- [Activité 08 : Audit d'un système d'information et identifications des besoins du client](/bts/assets/files/atelier/entreprise/08-audit.pdf))
   - _[audit.pdf](/bts/assets/files/atelier/entreprise/08-audit.pdf)_
-- [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.docx)
-- [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing.docx)
+- [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.pdf))
+- [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing.pdf))
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
-- [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisée et authentifcation MFA]()
-- [Activité 13 : Mise en place d'un service de scan réseau](/bts/assets/files/atelier/entreprise/09-scan_over_ftp.docx)
+- [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisées]()
+- [Activité 13 : Mise en place d'un service de scan réseau](/bts/assets/files/atelier/entreprise/09-scan_over_ftp.pdf))
 
 
 
