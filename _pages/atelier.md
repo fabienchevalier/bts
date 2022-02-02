@@ -55,8 +55,8 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 02 : Monitoring, inventaire et gestion à distance d'un parc informatique avec DATTO RMM](/bts/assets/files/atelier/entreprise/02-monitoring_gestion_datto.pdf)
 - [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.pdf)
 - [Activité 04 : Migration d'une VM cliente sur un nouveau serveur](/bts/assets/files/atelier/entreprise/04-migration_hyperv.pdf)
-- [Activité 05 : Mise en place d'une solution de sauvegarde de fichiers dans le cloud NS2B](/bts/assets/files/atelier/entreprise/05-sauvegarde_cloud.pdf)
-- [Activité 06 : Mise en place de la réplication des serveurs de sauvegardes](/bts/assets/files/atelir/entreprise/06-replication_hyperV.pdf)
+- [Activité 05 : Mise en place d'une solution de sauvegarde de fichiers dans le cloud NS2B]()
+- [Activité 06 : Mise en place de la réplication des serveurs de sauvegardes]()
 - [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelier/entreprise/07-planification.pdf)
 
 ### Deuxième année
@@ -68,7 +68,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.pdf)
 - [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing.pdf)
 - [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
-- [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisées]()
+- [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisée](/bts/assets/files/atelier/entreprise/12-rd_gateway.pdf)
 - [Activité 13 : Mise en place d'un service de scan réseau](/bts/assets/files/atelier/entreprise/13-scan_over_ftp.pdf)
 
 
