@@ -67,7 +67,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
   - _[audit.pdf](/bts/assets/files/atelier/entreprise/08-audit.pdf)_
 - [Activité 09 : Remplacement et configuration de switchs CISCO niveau 2](/bts/assets/files/atelier/entreprise/09-configuration_switch_hpe_vers_cisco.pdf)
 - [Activité 10 : Participation à l'amélioration de la présence en ligne de l'entreprise](/bts/assets/files/atelier/entreprise/10-webmarketing.pdf)
-- [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)]()
+- [Activité 11 : Déploiement d'un serveur Coala (Sage Génération Experts)](/bts/assets/files/atelier/entreprise/11-deploiement_coala.pdf)
 - [Activité 12 : Déploiement d'un serveur RDS avec passerelle sécurisée](/bts/assets/files/atelier/entreprise/12-rd_gateway.pdf)
 - [Activité 13 : Mise en place d'un service de scan réseau](/bts/assets/files/atelier/entreprise/13-scan_over_ftp.pdf)
 
