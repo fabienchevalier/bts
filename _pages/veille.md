@@ -10,7 +10,8 @@ permalink: /veille/
 classes: wide
 ---
 ## Veille technologique : Qu'est-ce que le DevOps et pourquoi j'ai choisi de m'y intéresser
-> En fin de page, vous retrouverez les différents articles que j'ai pu rédiger durant mon cursus
+> En fin de page, vous retrouverez les différents articles que j'ai pu rédiger durant mon cursus. L'organisation de ma veille informatique est détaillée dans l'activité 02 [téléchargeable ici](https://fchevalier.net/bts/assets/files/atelier/ecole/02-veille.pdf)
+
 <p align="center">
   <img src="/bts/assets/images/devops.png" />
 </p>
