@@ -17,6 +17,10 @@
 <lastmod>2021-06-07T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/bts/devops/terraform/</loc>
+<lastmod>2021-12-15T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/bts/juridique/rgpd/</loc>
 <lastmod>2022-01-19T00:00:00+01:00</lastmod>
 </url>
@@ -34,12 +38,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/bts/realisations/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/bts/realisations/situation_01</loc>
-</url>
-<url>
-<loc>http://localhost:4000/bts/realisations/situation_02</loc>
 </url>
 <url>
 <loc>http://localhost:4000/bts/veille/</loc>

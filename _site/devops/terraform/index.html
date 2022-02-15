@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Ansible, un outil d’automatisation IT open source - Portofolio</title>
-<meta name="description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
+<!-- begin _includes/seo.html --><title>Terraform : un outil d’Infrastructure as Code - Portofolio</title>
+<meta name="description" content="Terraform permet aux développeur de créer, modifier et versionner une infrastructure…">
 
 
   <meta name="author" content="Fabien CHEVALIER">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="Portofolio">
-<meta property="og:title" content="Ansible, un outil d’automatisation IT open source">
-<meta property="og:url" content="http://localhost:4000/bts/devops/ansible/">
+<meta property="og:title" content="Terraform : un outil d’Infrastructure as Code">
+<meta property="og:url" content="http://localhost:4000/bts/devops/terraform/">
 
 
-  <meta property="og:description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
+  <meta property="og:description" content="Terraform permet aux développeur de créer, modifier et versionner une infrastructure…">
 
 
 
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2021-06-07T00:00:00+02:00">
+  <meta property="article:published_time" content="2021-12-15T00:00:00+01:00">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/bts/devops/ansible/">
+<link rel="canonical" href="http://localhost:4000/bts/devops/terraform/">
 
 
 
@@ -158,12 +158,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Ansible, un outil d’automatisation IT open source
+          Terraform : un outil d’Infrastructure as Code
 
         
       </h1>
       
-        <p class="page__lead">Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…
+        <p class="page__lead">Terraform permet aux développeur de créer, modifier et versionner une infrastructure…
 </p>
       
       
@@ -180,7 +180,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute(s) de lecture
+          moins de 1 minute(s) de lecture
         
       </span>
     
@@ -315,9 +315,9 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Ansible, un outil d’automatisation IT open source">
-    <meta itemprop="description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
-    <meta itemprop="datePublished" content="2021-06-07T00:00:00+02:00">
+    <meta itemprop="headline" content="Terraform : un outil d’Infrastructure as Code">
+    <meta itemprop="description" content="Terraform permet aux développeur de créer, modifier et versionner une infrastructure…">
+    <meta itemprop="datePublished" content="2021-12-15T00:00:00+01:00">
     
 
     <div class="page__inner-wrap">
@@ -328,28 +328,23 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#ansible-un-outil-dautomatisation-it-open-source">Ansible, un outil d’automatisation IT open source</a><ul><li><a href="#quest-ce-quansible-">Qu’est-ce qu’Ansible ?</a></li><li><a href="#comment-ça-fonctionne-">Comment ça fonctionne ?</a><ul><li><a href="#principe-de-fonctionnement">Principe de fonctionnement</a></li><li><a href="#pourquoi-utiliser-ansible-">Pourquoi utiliser Ansible ?</a></li><li><a href="#les-playbooks-ansible">Les playbooks Ansible</a></li></ul></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#quest-ce-que-linfrastructure-as-code-iac">Qu’est-ce que l’infrastructure as code (IaC)?</a></li><li><a href="#terraform-un-outil-open-source-diac">Terraform, un outil open-source d’IaC</a><ul><li><a href="#hcl-le-language-terraform">HCL, le language Terraform</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="ansible-un-outil-dautomatisation-it-open-source">Ansible, un outil d’automatisation IT open source</h1>
+        <h1 id="quest-ce-que-linfrastructure-as-code-iac">Qu’est-ce que l’infrastructure as code (IaC)?</h1>
 
-<h2 id="quest-ce-quansible-">Qu’est-ce qu’Ansible ?</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="" /></p>
+<p><img src="https://www.iguanesolutions.com/wp-content/uploads/2021/04/Terraform_PrimaryLogo_FullColor_RGB.png" alt="" />
+On peut comparer l’IaC au processus de compilation d’un programme informatique depuis le code source. En effet, un compilateur transforme des lignes de codes en un fichier binaire exploitable par n’importe quel ordinateur. L’IaC génère la même infrastructure à chaque fois qu’elle est lancée. Elle peut ainsi permettre aux équipes Dev et Ops de tester des applications dans des environnement proches de l’environnement de production final.</p>
+<h1 id="terraform-un-outil-open-source-diac">Terraform, un outil open-source d’IaC</h1>
 
-<p>Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement, provisionnement et gestion de configurations d’une infrastructure. Il n’a pas besoin d’un agent déployé sur les systèmes gérés pour fonctionner (agentless), car il se base sur des technologies souvent déjà pré-installées pour fonctionner (SSH sous Unix, WRM pour Windows server).</p>
+<blockquote>
+  <p>Terraform est un outil permettant la mise en place d’IaC. Il permet donc de stocker la configuration d’infrastructures entières sous forme de code, puis de les provisionner sur le cloud via des connecteurs (provider) tel qu’AWS, Azure, OVH etc…</p>
+</blockquote>
 
-<h2 id="comment-ça-fonctionne-">Comment ça fonctionne ?</h2>
-
-<h3 id="principe-de-fonctionnement">Principe de fonctionnement</h3>
-<p>Ansible fonctionne sur la base d’un serveur hôte prenant le contrôle des clients appelés “nœuds”. L’unique prérequis pour les noeuds Linux/Unix est la disponibilité de python 3 et SSH. Quant à Windows, il nécessite une connexion distante à PowerShell. Ansible est aussi capable de gérer du matériel réseau de différents constructeurs (Cisco/VyOS) via SSH.</p>
-
-<h3 id="pourquoi-utiliser-ansible-">Pourquoi utiliser Ansible ?</h3>
-<p>L’automatisation est devenue indispensable dans le monde de l’informatique moderne. Elle permet entre autres une mise à l’échelle très rapide des infrastructures (montée en puissance), facilite la gestion de certaines tâches récurrentes (mises à jour, maintenances, déploiements), et d’une manière générale augmente la productivité d’une entreprise. Cette automatisation est même devenue indispensable pour la plupart des grands acteurs de l’informatique, qui proposent parfois des mises à jour quasi quotidiennes de leurs logiciels. Afin de pouvoir supporter un rythme de développement aussi court, il est nécessaire d’automatiser une partie de l’infrastructure pour être en mesure de tester et corriger les bugs en continu. Ansible est une des réponses aux problématiques rencontrées par ce type d’entreprises.</p>
-
-<h3 id="les-playbooks-ansible">Les playbooks Ansible</h3>
-<p>Les playbooks Ansible sont des fichiers de configuration écrits en YAML, faciles à comprendre et rédiger. Les playbooks sont tout simplement des listes de tâches à effectuer sur les nœuds via des modules. Ils constituent le cœur de fonctionnement d’Ansible.</p>
+<h2 id="hcl-le-language-terraform">HCL, le language Terraform</h2>
+<p>Terraform utilise un langage appelé HCL (pour HarshiCorp Configuration Langage) pour effectuer les configurations d’infrastructures. Il permet d’écrire rapidement des ressources à l’aide de blocs, arguments et expressions.</p>
 
         
       </section>
@@ -376,7 +371,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Mis à jour :</strong> <time class="dt-published" datetime="2021-06-07T00:00:00+02:00">June 7, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Mis à jour :</strong> <time class="dt-published" datetime="2021-12-15T00:00:00+01:00">December 15, 2021</time></p>
 
       </footer>
 
@@ -385,22 +380,22 @@
     <h4 class="page__share-title">Partager sur</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Ansible%2C+un+outil+d%27automatisation+IT+open+source%20http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Terraform+%3A+un+outil+d%27Infrastructure+as+Code%20http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fterraform%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fterraform%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fterraform%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/bts/devops/kubernetes/" class="pagination--pager" title="Kubernetes : La plateforme d’orchestration de containers
+      <a href="/bts/devops/ansible/" class="pagination--pager" title="Ansible, un outil d’automatisation IT open source
 ">Précédent</a>
     
     
-      <a href="/bts/devops/terraform/" class="pagination--pager" title="Terraform : un outil d’Infrastructure as Code
+      <a href="/bts/juridique/rgpd/" class="pagination--pager" title="1,1 Md’€ d’amendes liées à l’application du RGPD en Europe en 2021
 ">Suivant</a>
     
   </nav>
@@ -465,7 +460,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/bts/devops/terraform/" rel="permalink">Terraform : un outil d’Infrastructure as Code
+        <a href="/bts/devops/ansible/" rel="permalink">Ansible, un outil d’automatisation IT open source
 </a>
       
     </h2>
@@ -483,14 +478,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          moins de 1 minute(s) de lecture
+          1 minute(s) de lecture
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Terraform permet aux développeur de créer, modifier et versionner une infrastructure…
+    <p class="archive__item-excerpt" itemprop="description">Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…
 </p>
   </article>
 </div>

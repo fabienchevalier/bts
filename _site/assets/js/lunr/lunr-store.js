@@ -23,6 +23,12 @@ var store = [{
         "url": "/bts/devops/ansible/",
         "teaser": null
       },{
+        "title": "Terraform : un outil d'Infrastructure as Code",
+        "excerpt":"Qu’est-ce que l’infrastructure as code (IaC)? On peut comparer l’IaC au processus de compilation d’un programme informatique depuis le code source. En effet, un compilateur transforme des lignes de codes en un fichier binaire exploitable par n’importe quel ordinateur. L’IaC génère la même infrastructure à chaque fois qu’elle est lancée....","categories": ["DevOps"],
+        "tags": [],
+        "url": "/bts/devops/terraform/",
+        "teaser": null
+      },{
         "title": "1,1 Md'€ d'amendes liées à l'application du RGPD en Europe en 2021",
         "excerpt":"Qu’est-ce que le RGPD? La notion de donnée personnelle Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ». Une personne peut être identifiée: directement: par son nom ou son prénom indirectement: par un indentifiant client, un numéro de téléphone, la...","categories": ["Juridique"],
         "tags": [],
