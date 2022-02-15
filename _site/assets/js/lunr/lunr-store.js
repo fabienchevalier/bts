@@ -17,6 +17,12 @@ var store = [{
         "url": "/bts/devops/kubernetes/",
         "teaser": null
       },{
+        "title": "Ansible, un outil d'automatisation IT open source",
+        "excerpt":"Ansible, un outil d’automatisation IT open source Qu’est-ce qu’Ansible ? Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement, provisionnement et gestion de configurations d’une infrastructure. Il n’a pas besoin d’un agent déployé sur les systèmes gérés pour fonctionner (agentless), car il se base sur...","categories": ["DevOps"],
+        "tags": [],
+        "url": "/bts/devops/ansible/",
+        "teaser": null
+      },{
         "title": "1,1 Md'€ d'amendes liées à l'application du RGPD en Europe en 2021",
         "excerpt":"Qu’est-ce que le RGPD? La notion de donnée personnelle Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ». Une personne peut être identifiée: directement: par son nom ou son prénom indirectement: par un indentifiant client, un numéro de téléphone, la...","categories": ["Juridique"],
         "tags": [],

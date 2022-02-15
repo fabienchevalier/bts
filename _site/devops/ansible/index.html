@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Contrat d’infogérance informatique : ce qu’il faut savoir - Portofolio</title>
-<meta name="description" content="L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur de métier…">
+<!-- begin _includes/seo.html --><title>Ansible, un outil d’automatisation IT open source - Portofolio</title>
+<meta name="description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
 
 
   <meta name="author" content="Fabien CHEVALIER">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="Portofolio">
-<meta property="og:title" content="Contrat d’infogérance informatique : ce qu’il faut savoir">
-<meta property="og:url" content="http://localhost:4000/bts/juridique/infogerance/">
+<meta property="og:title" content="Ansible, un outil d’automatisation IT open source">
+<meta property="og:url" content="http://localhost:4000/bts/devops/ansible/">
 
 
-  <meta property="og:description" content="L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur de métier…">
+  <meta property="og:description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
 
 
 
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2020-12-03T00:00:00+01:00">
+  <meta property="article:published_time" content="2021-06-07T00:00:00+02:00">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/bts/juridique/infogerance/">
+<link rel="canonical" href="http://localhost:4000/bts/devops/ansible/">
 
 
 
@@ -158,12 +158,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Contrat d’infogérance informatique : ce qu’il faut savoir
+          Ansible, un outil d’automatisation IT open source
 
         
       </h1>
       
-        <p class="page__lead">L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur de métier…
+        <p class="page__lead">Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…
 </p>
       
       
@@ -180,7 +180,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          moins de 1 minute(s) de lecture
+          1 minute(s) de lecture
         
       </span>
     
@@ -315,9 +315,9 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Contrat d’infogérance informatique : ce qu’il faut savoir">
-    <meta itemprop="description" content="L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur de métier…">
-    <meta itemprop="datePublished" content="2020-12-03T00:00:00+01:00">
+    <meta itemprop="headline" content="Ansible, un outil d’automatisation IT open source">
+    <meta itemprop="description" content="Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…">
+    <meta itemprop="datePublished" content="2021-06-07T00:00:00+02:00">
     
 
     <div class="page__inner-wrap">
@@ -328,34 +328,28 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#un-contrat-dinfogérance-mais-pourquoi">Un contrat d’infogérance, mais pourquoi?</a><ul><li><a href="#définition">Définition</a></li><li><a href="#en-quoi-la-bonne-rédaction-du-contrat-dinfogérance-est-importante-pour-une-entreprise-informatique">En quoi la bonne rédaction du contrat d’infogérance est importante pour une entreprise informatique</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#ansible-un-outil-dautomatisation-it-open-source">Ansible, un outil d’automatisation IT open source</a><ul><li><a href="#quest-ce-quansible-">Qu’est-ce qu’Ansible ?</a></li><li><a href="#comment-ça-fonctionne-">Comment ça fonctionne ?</a><ul><li><a href="#principe-de-fonctionnement">Principe de fonctionnement</a></li><li><a href="#pourquoi-utiliser-ansible-">Pourquoi utiliser Ansible ?</a></li><li><a href="#les-playbooks-ansible">Les playbooks Ansible</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="un-contrat-dinfogérance-mais-pourquoi">Un contrat d’infogérance, mais pourquoi?</h1>
+        <h1 id="ansible-un-outil-dautomatisation-it-open-source">Ansible, un outil d’automatisation IT open source</h1>
 
-<h2 id="définition">Définition</h2>
+<h2 id="quest-ce-quansible-">Qu’est-ce qu’Ansible ?</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="" /></p>
 
-<p><img src="https://www.crt.fr/wp-content/uploads/2018/08/infogerance.png" alt="enter image description here" /></p>
+<p>Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement, provisionnement et gestion de configurations d’une infrastructure. Il n’a pas besoin d’un agent déployé sur les systèmes gérés pour fonctionner (agentless), car il se base sur des technologies souvent déjà pré-installées pour fonctionner (SSH sous Unix, WRM pour Windows server).</p>
 
-<p>Un contrat d’infogérance permet à des sociétés de toutes tailles et secteurs d’externalisation la gestion de leur informatique. Concrètement, cela permet aux entreprise de se recentrer sur leur coeur de métier en transférant la charge liée à la maintenance informatique à une entreprise spécialisée tierce.</p>
+<h2 id="comment-ça-fonctionne-">Comment ça fonctionne ?</h2>
 
-<h2 id="en-quoi-la-bonne-rédaction-du-contrat-dinfogérance-est-importante-pour-une-entreprise-informatique">En quoi la bonne rédaction du contrat d’infogérance est importante pour une entreprise informatique</h2>
+<h3 id="principe-de-fonctionnement">Principe de fonctionnement</h3>
+<p>Ansible fonctionne sur la base d’un serveur hôte prenant le contrôle des clients appelés “nœuds”. L’unique prérequis pour les noeuds Linux/Unix est la disponibilité de python 3 et SSH. Quant à Windows, il nécessite une connexion distante à PowerShell. Ansible est aussi capable de gérer du matériel réseau de différents constructeurs (Cisco/VyOS) via SSH.</p>
 
-<p>Le contrat est extrêmement important car délimite avec précision le périmètre d’application. Il définit aussi sous quelles conditions le client aura droit à une intervention sur site par exemple. De manière générale, le contrat d’infogérance doit stipuler :</p>
+<h3 id="pourquoi-utiliser-ansible-">Pourquoi utiliser Ansible ?</h3>
+<p>L’automatisation est devenue indispensable dans le monde de l’informatique moderne. Elle permet entre autres une mise à l’échelle très rapide des infrastructures (montée en puissance), facilite la gestion de certaines tâches récurrentes (mises à jour, maintenances, déploiements), et d’une manière générale augmente la productivité d’une entreprise. Cette automatisation est même devenue indispensable pour la plupart des grands acteurs de l’informatique, qui proposent parfois des mises à jour quasi quotidiennes de leurs logiciels. Afin de pouvoir supporter un rythme de développement aussi court, il est nécessaire d’automatiser une partie de l’infrastructure pour être en mesure de tester et corriger les bugs en continu. Ansible est une des réponses aux problématiques rencontrées par ce type d’entreprises.</p>
 
-<ul>
-  <li>L’identification du prestataire et du client</li>
-  <li>La date de début de contrat et de son application</li>
-  <li>La responsabilités de chaque parties</li>
-  <li>Le périmètre d’application défini</li>
-  <li>L’assistance téléphonique incluse (ou non)</li>
-  <li>Les modalités d’intervention sur site</li>
-  <li>La confidentalité (et tout ce qui se rapporte au <a href="https://fchevalier.net/bts/juridique/rgpd/">RGPD</a>)</li>
-</ul>
-
-<p>Bien sûr, cette liste est non exhaustive. Elle donne juste un aperçu du type d’informations que l’on retrouve sur la plupart des contrats d’infogérance.</p>
+<h3 id="les-playbooks-ansible">Les playbooks Ansible</h3>
+<p>Les playbooks Ansible sont des fichiers de configuration écrits en YAML, faciles à comprendre et rédiger. Les playbooks sont tout simplement des listes de tâches à effectuer sur les nœuds via des modules. Ils constituent le cœur de fonctionnement d’Ansible.</p>
 
         
       </section>
@@ -374,7 +368,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Catégories : </strong>
     <span itemprop="keywords">
     
-      <a href="/bts/categories/#juridique" class="page__taxonomy-item p-category" rel="tag">Juridique</a>
+      <a href="/bts/categories/#devops" class="page__taxonomy-item p-category" rel="tag">DevOps</a>
     
     </span>
   </p>
@@ -382,7 +376,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Mis à jour :</strong> <time class="dt-published" datetime="2020-12-03T00:00:00+01:00">December 3, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Mis à jour :</strong> <time class="dt-published" datetime="2021-06-07T00:00:00+02:00">June 7, 2021</time></p>
 
       </footer>
 
@@ -391,22 +385,22 @@
     <h4 class="page__share-title">Partager sur</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Contrat+d%27infog%C3%A9rance+informatique+%3A+ce+qu%27il+faut+savoir%20http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fjuridique%2Finfogerance%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Ansible%2C+un+outil+d%27automatisation+IT+open+source%20http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fjuridique%2Finfogerance%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fjuridique%2Finfogerance%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbts%2Fdevops%2Fansible%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Partager sur LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/bts/devops/docker/" class="pagination--pager" title="Conteneurisation avec Docker
+      <a href="/bts/devops/kubernetes/" class="pagination--pager" title="Kubernetes : La plateforme d’orchestration de containers
 ">Précédent</a>
     
     
-      <a href="/bts/devops/kubernetes/" class="pagination--pager" title="Kubernetes : La plateforme d’orchestration de containers
+      <a href="/bts/juridique/rgpd/" class="pagination--pager" title="1,1 Md’€ d’amendes liées à l’application du RGPD en Europe en 2021
 ">Suivant</a>
     
   </nav>
@@ -471,46 +465,6 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/bts/devops/ansible/" rel="permalink">Ansible, un outil d’automatisation IT open source
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute(s) de lecture
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Ansible est un outil open source permettant d’automatiser la plupart des tâches de déploiement…
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/bts/devops/kubernetes/" rel="permalink">Kubernetes : La plateforme d’orchestration de containers
 </a>
       
@@ -538,6 +492,45 @@
 
     <p class="archive__item-excerpt" itemprop="description">Kubernetes permet d’automatiser le déploiement et la gestion d’applications multi-container…
 </p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/bts/juridique/infogerance/" rel="permalink">Contrat d’infogérance informatique : ce qu’il faut savoir
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          moins de 1 minute(s) de lecture
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">L’infogérance permet à des sociétés de toutes tailles et de tous secteurs d’externaliser tout ou partie de leur informatique pour se recentrer sur leur cœur ...</p>
   </article>
 </div>
 
