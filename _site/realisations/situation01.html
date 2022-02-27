@@ -1,0 +1,543 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Mise en place d’une solution de gestion des incidents avec GLPI - Portofolio</title>
+<meta name="description" content="Documentation complète précisant et décrivant la mise en place d’un logiciel de gestion d’incident avec GLPI">
+
+
+  <meta name="author" content="Fabien CHEVALIER">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr">
+<meta property="og:site_name" content="Portofolio">
+<meta property="og:title" content="Mise en place d’une solution de gestion des incidents avec GLPI">
+<meta property="og:url" content="http://localhost:4000/bts/realisations/situation01">
+
+
+  <meta property="og:description" content="Documentation complète précisant et décrivant la mise en place d’un logiciel de gestion d’incident avec GLPI">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/bts/assets/images/webheader-glpi-9.5.jpg">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/bts/realisations/situation01">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Fabien CHEVALIER",
+      "url": "http://localhost:4000/bts/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/bts/feed.xml" type="application/atom+xml" rel="alternate" title="Portofolio Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/bts/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="shortcut icon" type="image/ico" href="/bts/favicon.ico"/>
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/bts/">
+          Portofolio
+          <span class="site-subtitle">BTS SIO option SISR 2021-2022</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/bts/presentation/" title="Présentation de l'entreprise d'acceuil et du cursus scolaire">Qui suis-je?</a>
+            </li><li class="masthead__menu-item">
+              <a href="/bts/ppe/" title="Parcours de professionnalisation sous forme de projets réalisés en classe">Parcours Pro (E4)</a>
+            </li><li class="masthead__menu-item">
+              <a href="/bts/atelier/" title="Tableau de synthèse des compétences ainsi que les activités réalisés en classe et en entreprise">Atelier Pro (E4)</a>
+            </li><li class="masthead__menu-item">
+              <a href="/bts/realisations/" title="Réalisations de projet pour la soutenance à l'oral (épreuve E5)">Réalisations Pro (E5)</a>
+            </li><li class="masthead__menu-item">
+              <a href="/bts/veille/">Veille</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/bts/assets/images/webheader-glpi-9.5.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Mise en place d’une solution de gestion des incidents avec GLPI
+
+        
+      </h1>
+      
+        <p class="page__lead">Documentation complète précisant et décrivant la mise en place d’un logiciel de gestion d’incident avec GLPI
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/bts/">
+        <img src="/bts/assets/images/bio-photo.jpeg" alt="Fabien CHEVALIER" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/bts/" itemprop="url">Fabien CHEVALIER</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Fabien, 27 ans, passionné par l’informatique, je cultive un interêt particulier pour la méthode DevOps.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Contact</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span class="label">Saint-Germain-en-Laye</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/fabche/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="mailto:contact@fchevalier.net" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span class="label">Contact</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Mise en place d’une solution de gestion des incidents avec GLPI">
+    <meta itemprop="description" content="Documentation complète précisant et décrivant la mise en place d’un logiciel de gestion d’incident avec GLPI">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
+              <ul class="toc__menu"><li><a href="#mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#contexte">Contexte</a><ul><li><a href="#schéma-dinfrastructure">Schéma d’infrastructure</a></li></ul></li></ul></li><li><a href="#déploiement-de-glpi">Déploiement de GLPI</a><ul><li><a href="#prérequis">Prérequis</a></li><li><a href="#installation-des-prérequis">Installation des prérequis</a><ul><li><a href="#paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</a></li></ul></li><li><a href="#installation-de-glpi">Installation de GLPI</a><ul><li><a href="#paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</a></li><li><a href="#règles-dattribution-de-profil">Règles d’attribution de profil</a></li><li><a href="#catégories-de-tickets">Catégories de tickets</a></li></ul></li></ul></li><li><a href="#tests-et-validation-de-linstallation">Tests et validation de l’installation</a><ul><li><a href="#connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</a></li><li><a href="#connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</a></li></ul></li><li><a href="#annexes">Annexes</a><ul><li><a href="#procédure-de-création-de-ticket">Procédure de création de ticket</a></li><li><a href="#procédure-de-résolution-dincident">Procédure de résolution d’incident</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</h1>
+
+<p><img src="https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png" alt="" /></p>
+
+<h2 id="contexte">Contexte</h2>
+<blockquote>
+  <p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d’expliquer l’utilisation de l’outil.</p>
+</blockquote>
+
+<h3 id="schéma-dinfrastructure">Schéma d’infrastructure</h3>
+<p>Le serveur GLPI est situé dans le VLAN informatique de la M2L.</p>
+
+<h1 id="déploiement-de-glpi">Déploiement de GLPI</h1>
+
+<h2 id="prérequis">Prérequis</h2>
+
+<p>GLPI nécessite l’installation de dépendances pour fonctionner, à savoir :</p>
+
+<ul>
+  <li>PHP</li>
+  <li>Perl</li>
+  <li>Une base de données (MySQL ou MariaDB)</li>
+  <li>Un serveur web (pile LAMP)</li>
+</ul>
+
+<p>La synchronisation LDAP permettant d’importer les utilisateurs du domaine depuis l’annuaire Active Directory, elle nécessite un contrôleur de domaine déployé et fonctionnel. En outre, le serveur sur lequel GLPI est déployé doit être en mesure de communiquer avec le serveur AD. Dans notre contexte, c’est effectivement le cas.</p>
+
+<h2 id="installation-des-prérequis">Installation des prérequis</h2>
+
+<p>L’installation des prérequis se fait en déployant leurs paquets :
+<code class="language-plaintext highlighter-rouge">sudo apt-get install -y apache2 perl php-ldap php-imap php-apcu php-xmlrpc php-cas php-mysqli php-mbstring php-curl php-gd php-simplexml php-xml php-intl php-zip php-bz2 mariadb-server</code></p>
+
+<p>Une fois l’installation terminée, on relance Apache2:
+<code class="language-plaintext highlighter-rouge">sudo systemctl reload apache2</code></p>
+
+<p>On vérifie le fonctionnement du serveur web (Apache2) via l’adresse de la boucle locale:
+<img src="/bts/_pages/exam/imgs/apache.png" alt="" /></p>
+
+<h3 id="paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</h3>
+
+<p>On sécurise l’installation du serveur MariaDB:
+<code class="language-plaintext highlighter-rouge">sudo mysql_secure_installation</code>
+<img src="/bts/_pages/exam/imgs/mysql_secure.png" alt="" /></p>
+
+<p>On créee la base de donnée et l’user autorisé à y accéder:
+<img src="/bts/_pages/exam/imgs/user_dbase.png" alt="" /></p>
+
+<h2 id="installation-de-glpi">Installation de GLPI</h2>
+<p>Il faut récupérer la dernière version de GLPI disponible sur le site du projet à cette adresse : <a href="https://glpi-project.org/fr/telechargements/">https://glpi-project.org/fr/telechargements/</a></p>
+
+<p>A l’heure ou je rédige ses lignes, la dernière version en date est la 9.5.7. Adapter les commandes suivantes en fonction de la dernière version mise à jour:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo tar xzf glpi-9.5.7.tgz -C /var/www/html</code></p>
+
+<p>Configuration des droits:
+<code class="language-plaintext highlighter-rouge">sudo chown -R www-data:www-data /var/www/html/glpi &amp;&amp; chmod -R 775 /var/www/html/glpi</code></p>
+
+<p>La suite de l’installation se poursuit vers l’interface web. A l’étape 1, entrer les informations concernant la base de donnée précédemment créée:
+<img src="/bts/_pages/exam/imgs/glpi_web_install.png" alt="" /></p>
+
+<p>Poursuivre l’installation, puis se connecter avec les ID administrateurs par défaut (GLPI/GLPI) afin de paramétrer le logiciel.</p>
+
+<h3 id="paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</h3>
+<p>La synchronisation LDAP permet d’importer les utilisateurs d’un serveur AD dans la base GLPI. Elle permet entre autres aux utilisateurs de s’identifier par leur identifiants du domaine. Ce paramétrage est très facile à faire dans GLPI. Il suffit de se rendre via l’interface de GLPI dans Configuration&gt;Authentification&gt;Annuaires LDAP et d’y inscrire les informations comme ceci:
+<img src="/bts/_pages/exam/imgs/ldap.png" alt="" /></p>
+
+<p>On peut ensuite tester la configuration:
+<img src="/bts/_pages/exam/imgs/ldap_config.png" alt="" /></p>
+
+<p>Et importer les users:
+<img src="/bts/_pages/exam/imgs/ldap_users.png" alt="" /></p>
+
+<h3 id="règles-dattribution-de-profil">Règles d’attribution de profil</h3>
+<p>Pour les besoins de la M2L, j’ai créé deux profils GLPI qui octroye différents droits en fonction du besoin.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Droits</th>
+      <th>Utilisateurs</th>
+      <th>Techniciens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Page d’accueil par défaut</td>
+      <td>Création de ticket</td>
+      <td>Liste des tickets en cours</td>
+    </tr>
+    <tr>
+      <td>Création de tickets</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Modification de tickets</td>
+      <td>Non</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Attribution d’un ticket</td>
+      <td>Non</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Clôturer un ticket</td>
+      <td>Non</td>
+      <td>Oui</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ces profils sont attribués automatiquement aux utilisateurs en fonction de leur groupe d’appartenance dans l’AD. Les règles GLPI permettent cela en assignant un profil selon critères:</p>
+
+<blockquote>
+  <p>Si un utilisateur est membre du groupe AD Technicien N1 alors:
+<img src="/bts/_pages/exam/imgs/regle_tech.png" alt="" />
+<img src="/bts/_pages/exam/imgs/profil_tech.png" alt="" />
+On lui attribue le profil GLPI Technicien</p>
+</blockquote>
+
+<h3 id="catégories-de-tickets">Catégories de tickets</h3>
+<p>Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de proposer à l’utilisateur de sélectionner une catégorie parmi une liste préétablie. Ces catégories sont modifiables via la configuration des intitulés, Catégories ITIL :
+<img src="/bts/_pages/exam/imgs/itil.png" alt="" /></p>
+
+<h1 id="tests-et-validation-de-linstallation">Tests et validation de l’installation</h1>
+
+<p>Le comportement attendu est:</p>
+
+<blockquote>
+  <ul>
+    <li>GLPI est accessible depuis l’adresse IP du serveur : http://172.16.2.56/glpi</li>
+    <li>Un utilisateur membre du domaine peut se connecter sur GLPI</li>
+    <li>Il est en mesure de créer un ticket et de lui attribuer une catégorie</li>
+    <li>Un technicien est en mesure de se connecter sur GLPI</li>
+    <li>Il peut s’attribuer un ticket, et y répondre</li>
+  </ul>
+</blockquote>
+
+<h2 id="connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</h2>
+
+<h2 id="connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</h2>
+
+<h1 id="annexes">Annexes</h1>
+
+<h2 id="procédure-de-création-de-ticket">Procédure de création de ticket</h2>
+
+<h2 id="procédure-de-résolution-dincident">Procédure de résolution d’incident</h2>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Contact</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/in/fabche/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="mailto:contact@fchevalier.net" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        
+      
+    
+
+    
+      <li><a href="/bts/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Flux</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Fabien CHEVALIER. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/bts/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
