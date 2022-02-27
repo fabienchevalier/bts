@@ -17,13 +17,15 @@ toc_label: "Table des matières"
 toc_icon: "cog"
 ---
 
-# Situation 1 : Gestion de parc informatique avec FusionInventory et GLPI
+# Situation 1 : Mise en place d’une solution de gestion des incidents avec GLPI
 
-![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)![](https://www.logiciel-libre.org/stock/img/product/fusininventory-logo.png)
+![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)
 
 ## Description de la situation
 
-La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d'autres structures hébergées. Dans le cadre d'un plan d'amélioration générale de son infrastructure, la M2L souhaite se doter d'un outil de gestion de parc stable et performant.
+La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs.
+
 
 ## Téléchargements
 
