@@ -20,7 +20,13 @@ toc_icon: "cog"
 Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d'expliquer l'utilisation de l'outil.
 
 ### Schéma d'infrastructure
-Le serveur GLPI est situé dans le VLAN informatique de la M2L.
+Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN2)
+
+#### Infrastructure générale
+![](/bts_pages/exam/infra.png)
+
+#### VLAN informatique
+![](/bts/_pages/exam/vlan2.png)
 
 
 
@@ -119,6 +125,8 @@ Le comportement attendu est:
 ## Connexion et attribution d'un ticket (technicien)
 
 # Annexes
+
+## Fiche situation professionnelle E5
 
 ## Procédure de création de ticket
 
