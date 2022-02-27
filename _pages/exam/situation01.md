@@ -23,7 +23,7 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN2)
 
 #### Infrastructure générale
-![](/bts_pages/exam/infra.png)
+![](/bts/_pages/exam/infra.png)
 
 #### VLAN informatique
 ![](/bts/_pages/exam/vlan2.png)
