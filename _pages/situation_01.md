@@ -15,13 +15,15 @@ toc_sticky: true
 toc_label: "Table des matières"
 toc_icon: "cog"
 ---
-# Gestions d’incidents et remontée d’inventaire avec GLPI et Fusion Inventory
+# Mise en place d’une solution de gestion des incidents avec GLPI
 
-![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)![](https://www.logiciel-libre.org/stock/img/product/fusininventory-logo.png)
+![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)
 
 ## Description de la situation
 
-Cette situation résume les procédures de déploiement du logiciel de gestion de parc GLPI, ainsi que l'installation et l'utilisation du plugin Fusion Inventory pour la remontée d'inventaire. Pour la partie gestion d'incidents, nous avons paramétré l'outil ticketing inclus dans GLPI.
+La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion de parc stable et performant.
+
 
 ## Téléchargements
 
@@ -29,6 +31,5 @@ Cette situation résume les procédures de déploiement du logiciel de gestion d
 - Schéma de l'infrastructure de la M2L : [Télécharger](/bts/assets/files/e5/situation_01/schema_infra_m2l.pdf)
 - Schéma du VLAN Informatique : [Télécharger](/bts/assets/files/e5/situation_01/schema_vlan_info.pdf)
 - Identifiants et mots de passes d'accès aux équipements : [Télécharger](/bts/assets/files/e5/situation_01/acces.docx)
-- Procédure de déploiment et paramétrage de GLPI  : [Télécharger](/bts/assets/files/e5/situation_01/installation.pdf)
-- Notice utilisateur pour la déclaration d'incident : [Télécharger](/bts/assets/files/e5/situation_01/notice_user.pdf)
-- Notice technicien pour la prise en charge d'incident : [Télécharger](/bts/assets/files/e5/situation_01/notice_tech.pdf)
+- Procédure de déploiement et paramétrage de GLPI  : [Télécharger](/bts/assets/files/e5/situation_01/installation.pdf)
+- 
