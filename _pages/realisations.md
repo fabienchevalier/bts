@@ -7,9 +7,9 @@ header:
     overlay_filter: 0.6
     actions:
         - label: "Situation 01"
-          url : "/realisations/#situation-1--gestion-de-parc-informatique-avec-fusioninventory-et-glpi"
+          url : "/realisations/situation01"
         - label : "Situation 02"
-          url : "/realisations/#situation-2--mise-en-place-du-routage-inter-vlans-routeur-on-stick"
+          url : "/realisations/situation02"
 permalink: /realisations/
 toc: true
 toc_sticky: true
