@@ -169,9 +169,9 @@
       
         <p>
         
-          <a href="/bts/realisations/#situation-1--gestion-de-parc-informatique-avec-fusioninventory-et-glpi" class="btn btn--light-outline btn--large">Situation 01</a>
+          <a href="/bts/realisations/situation01" class="btn btn--light-outline btn--large">Situation 01</a>
         
-          <a href="/bts/realisations/#situation-2--mise-en-place-du-routage-inter-vlans-routeur-on-stick" class="btn btn--light-outline btn--large">Situation 02</a>
+          <a href="/bts/realisations/situation02" class="btn btn--light-outline btn--large">Situation 02</a>
         
       
     </div>
@@ -313,7 +313,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#situation-1--mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Situation 1 : Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#description-de-la-situation">Description de la situation</a></li><li><a href="#téléchargements">Téléchargements</a></li></ul></li><li><a href="#situation-2--mise-en-place-du-routage-inter-vlans-routeur-on-stick">Situation 2 : Mise en place du routage inter-vlans (Routeur-on-stick)</a><ul><li><a href="#description-de-la-situation-1">Description de la situation</a></li><li><a href="#téléchargements-1">Téléchargements</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#situation-1--mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Situation 1 : Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#description-de-la-situation">Description de la situation</a></li></ul></li><li><a href="#situation-2--mise-en-place-du-routage-inter-vlans-routeur-on-stick">Situation 2 : Mise en place du routage inter-vlans (Routeur-on-stick)</a><ul><li><a href="#description-de-la-situation-1">Description de la situation</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -324,19 +324,12 @@
 
 <h2 id="description-de-la-situation">Description de la situation</h2>
 
-<p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+<blockquote>
+  <p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
 Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs.</p>
+</blockquote>
 
-<h2 id="téléchargements">Téléchargements</h2>
-
-<ul>
-  <li>Fiche mission E5 : <a href="/bts/assets/files/e5/situation_01/situation_01.pdf">Télécharger</a></li>
-  <li>Schéma de l’infrastructure de la M2L : <a href="/bts/assets/files/e5/situation_01/schema_infra_m2l.pdf">Télécharger</a></li>
-  <li>Schéma du VLAN Informatique : <a href="/bts/assets/files/e5/situation_01/schema_vlan_info.pdf">Télécharger</a></li>
-  <li>Identifiants et mots de passes d’accès aux équipements : <a href="/bts/assets/files/e5/situation_01/acces.docx">Télécharger</a></li>
-  <li>Procédure de déploiement et paramétrage de GLPI  : <a href="/bts/assets/files/e5/situation_01/installation.pdf">Télécharger</a></li>
-  <li>Procédure de déploiement et paramétrage de l’agent Fusion-Inventory : <a href="">Télécharger</a></li>
-</ul>
+<p><a href="/bts/realisations/situation01">Accès direct à la page de la situation</a></p>
 
 <h1 id="situation-2--mise-en-place-du-routage-inter-vlans-routeur-on-stick">Situation 2 : Mise en place du routage inter-vlans (Routeur-on-stick)</h1>
 
@@ -344,17 +337,11 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 
 <h2 id="description-de-la-situation-1">Description de la situation</h2>
 
-<p>La M2L est chargée d’offrir un service d’accès pour les ligues et pour ses services aux ressources hébergées comme aux ressources externes. Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de niveau 2 et un routeur. Les ligues sont organisés par VLAN. Au niveau du domaine de la M2L, les ligues sont représentées par des unités d’organisation. Les serveurs DHCPs étant situé dans le VLAN 2 (informatique), une configuration spécifique est nécessaire afin de permettre aux clients situés dans les différents VLANs d’obtenir une adresse IP dynamiquement.</p>
+<blockquote>
+  <p>La M2L est chargée d’offrir un service d’accès pour les ligues et pour ses services aux ressources hébergées comme aux ressources externes. Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de niveau 2 et un routeur. Les ligues sont organisés par VLAN. Au niveau du domaine de la M2L, les ligues sont représentées par des unités d’organisation. Les serveurs DHCPs étant situé dans le VLAN 2 (informatique), une configuration spécifique est nécessaire afin de permettre aux clients situés dans les différents VLANs d’obtenir une adresse IP dynamiquement.</p>
+</blockquote>
 
-<h2 id="téléchargements-1">Téléchargements</h2>
-
-<ul>
-  <li>Fiche mission E5 : <a href="">Télécharger</a></li>
-  <li>Schéma de l’infrastructure de la M2L : <a href="">Télécharger</a></li>
-  <li>Schéma du VLAN Informatique : <a href="">Télécharger</a></li>
-  <li>Maquette PacketTracer : <a href="">Télécharger</a></li>
-  <li>Procédure de mise en place du routage inter-vlans : <a href="">Téléhcarger</a></li>
-</ul>
+<p><a href="/bts/realisations/situation02">Accès direct à la page de la situation</a></p>
 
 
         

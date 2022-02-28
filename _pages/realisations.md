@@ -23,18 +23,10 @@ toc_icon: "cog"
 
 ## Description de la situation
 
-La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
 Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs.
 
-
-## Téléchargements
-
-- Fiche mission E5 : [Télécharger](/bts/assets/files/e5/situation_01/situation_01.pdf)
-- Schéma de l'infrastructure de la M2L : [Télécharger](/bts/assets/files/e5/situation_01/schema_infra_m2l.pdf)
-- Schéma du VLAN Informatique : [Télécharger](/bts/assets/files/e5/situation_01/schema_vlan_info.pdf)
-- Identifiants et mots de passes d'accès aux équipements : [Télécharger](/bts/assets/files/e5/situation_01/acces.docx)
-- Procédure de déploiement et paramétrage de GLPI  : [Télécharger](/bts/assets/files/e5/situation_01/installation.pdf)
-- Procédure de déploiement et paramétrage de l'agent Fusion-Inventory : [Télécharger]()
+[Accès direct à la page de la situation](/bts/realisations/situation01)
 
 # Situation 2 : Mise en place du routage inter-vlans (Routeur-on-stick)
 
@@ -42,13 +34,7 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 
 ## Description de la situation
 
-La M2L est chargée d'offrir un service d'accès pour les ligues et pour ses services aux ressources hébergées comme aux ressources externes. Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de niveau 2 et un routeur. Les ligues sont organisés par VLAN. Au niveau du domaine de la M2L, les ligues sont représentées par des unités d'organisation. Les serveurs DHCPs étant situé dans le VLAN 2 (informatique), une configuration spécifique est nécessaire afin de permettre aux clients situés dans les différents VLANs d'obtenir une adresse IP dynamiquement.
+>La M2L est chargée d'offrir un service d'accès pour les ligues et pour ses services aux ressources hébergées comme aux ressources externes. Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de niveau 2 et un routeur. Les ligues sont organisés par VLAN. Au niveau du domaine de la M2L, les ligues sont représentées par des unités d'organisation. Les serveurs DHCPs étant situé dans le VLAN 2 (informatique), une configuration spécifique est nécessaire afin de permettre aux clients situés dans les différents VLANs d'obtenir une adresse IP dynamiquement.
 
-## Téléchargements
-
-- Fiche mission E5 : [Télécharger]()
-- Schéma de l'infrastructure de la M2L : [Télécharger]()
-- Schéma du VLAN Informatique : [Télécharger]()
-- Maquette PacketTracer : [Télécharger]()
-- Procédure de mise en place du routage inter-vlans : [Téléhcarger]()
+[Accès direct à la page de la situation](/bts/realisations/situation02)
 
