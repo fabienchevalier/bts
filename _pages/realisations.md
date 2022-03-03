@@ -28,7 +28,7 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 
 [Accès direct à la page de la situation](/bts/realisations/situation01)
 
-# Situation 2 : Mise en place du routage inter-vlans (Routeur-on-stick)
+# Situation 2 : Routage inter-VLAN : accueil d’une nouvelle ligue au sein du réseau de la M2L 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg)
 

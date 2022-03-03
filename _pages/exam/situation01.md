@@ -16,23 +16,25 @@ toc_icon: "cog"
 ![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)
 
 ## Contexte
+
 > La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
 Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d'expliquer l'utilisation de l'outil.
 
 ### Schéma d'infrastructure
+
 Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN2)
 
 #### Infrastructure générale
+
 ![](/bts/_pages/exam/infra.png)
 
 #### VLAN informatique
+
 ![](/bts/_pages/exam/vlan2.png)
 
+## Déploiement de GLPI
 
-
-# Déploiement de GLPI
-
-## Prérequis
+### Prérequis
 
 GLPI nécessite l'installation de dépendances pour fonctionner, à savoir :
 
@@ -43,7 +45,7 @@ GLPI nécessite l'installation de dépendances pour fonctionner, à savoir :
 
 La synchronisation LDAP permettant d’importer les utilisateurs du domaine depuis l’annuaire Active Directory, elle nécessite un contrôleur de domaine déployé et fonctionnel. En outre, le serveur sur lequel GLPI est déployé doit être en mesure de communiquer avec le serveur AD. Dans notre contexte, c'est effectivement le cas.
 
-## Installation des prérequis
+### Installation des prérequis
 
 L'installation des prérequis se fait en déployant leurs paquets :
 `sudo apt-get install -y apache2 perl php-ldap php-imap php-apcu php-xmlrpc php-cas php-mysqli php-mbstring php-curl php-gd php-simplexml php-xml php-intl php-zip php-bz2 mariadb-server`
@@ -54,7 +56,7 @@ Une fois l'installation terminée, on relance Apache2:
 On vérifie le fonctionnement du serveur web (Apache2) via l'adresse de la boucle locale:
 ![](/bts/_pages/exam/imgs/apache.png)
 
-### Paramétrage de la base de donnée
+#### Paramétrage de la base de donnée
 
 On sécurise l'installation du serveur MariaDB:
 `sudo mysql_secure_installation`
@@ -63,7 +65,8 @@ On sécurise l'installation du serveur MariaDB:
 On créee la base de donnée et l'user autorisé à y accéder:
 ![](/bts/_pages/exam/imgs/user_dbase.png)
 
-## Installation de GLPI
+### Installation de GLPI
+
 Il faut récupérer la dernière version de GLPI disponible sur le site du projet à cette adresse : [https://glpi-project.org/fr/telechargements/](https://glpi-project.org/fr/telechargements/)
 
 A l'heure ou je rédige ses lignes, la dernière version en date est la 9.5.7. Adapter les commandes suivantes en fonction de la dernière version mise à jour:
@@ -78,7 +81,8 @@ La suite de l'installation se poursuit vers l'interface web. A l'étape 1, entre
 
 Poursuivre l'installation, puis se connecter avec les ID administrateurs par défaut (GLPI/GLPI) afin de paramétrer le logiciel.
 
-### Paramétrage de la synchronisation LDAP
+#### Paramétrage de la synchronisation LDAP
+
 La synchronisation LDAP permet d'importer les utilisateurs d'un serveur AD dans la base GLPI. Elle permet entre autres aux utilisateurs de s'identifier par leur identifiants du domaine. Ce paramétrage est très facile à faire dans GLPI. Il suffit de se rendre via l'interface de GLPI dans Configuration>Authentification>Annuaires LDAP et d'y inscrire les informations comme ceci:
 ![](/bts/_pages/exam/imgs/ldap.png)
 
@@ -88,8 +92,9 @@ On peut ensuite tester la configuration:
 Et importer les users:
 ![](/bts/_pages/exam/imgs/ldap_users.png)
 
-### Règles d'attribution de profil
-Pour les besoins de la M2L, j'ai créé deux profils GLPI qui octroye différents droits en fonction du besoin. 
+#### Règles d'attribution de profil
+
+Pour les besoins de la M2L, j'ai créé deux profils GLPI qui octroye différents droits en fonction du besoin.
 
 |Droits|Utilisateurs|Techniciens|
 |------|------------|-----------|
@@ -106,33 +111,30 @@ Ces profils sont attribués automatiquement aux utilisateurs en fonction de leur
 ![](/bts/_pages/exam/imgs/profil_tech.png)
 On lui attribue le profil GLPI Technicien
 
-### Catégories de tickets
+#### Catégories de tickets
+
 Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de proposer à l’utilisateur de sélectionner une catégorie parmi une liste préétablie. Ces catégories sont modifiables via la configuration des intitulés, Catégories ITIL :
 ![](/bts/_pages/exam/imgs/itil.png)
 
-# Tests et validation de l'installation
+## Tests et validation de l'installation
 
 Le comportement attendu est:
 
->- GLPI est accessible depuis l'adresse IP du serveur : http://172.16.2.56/glpi
+>- GLPI est accessible depuis l'adresse IP du serveur : <http://172.16.2.56/glpi>
+>
 - Un utilisateur membre du domaine peut se connecter sur GLPI
 - Il est en mesure de créer un ticket et de lui attribuer une catégorie
 - Un technicien est en mesure de se connecter sur GLPI
 - Il peut s'attribuer un ticket, et y répondre
 
-## Connexion et création d'un ticket (utilisateur)
+### Connexion et création d'un ticket (utilisateur)
 
-## Connexion et attribution d'un ticket (technicien)
+### Connexion et attribution d'un ticket (technicien)
 
-# Annexes
+## Annexes
 
-## Fiche situation professionnelle E5
+### Fiche situation professionnelle E5
 
-## Procédure de création de ticket
+### Procédure de création de ticket
 
-## Procédure de résolution d'incident
-
-
-
-
-
+### Procédure de résolution d'incident
