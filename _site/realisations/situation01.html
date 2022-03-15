@@ -306,33 +306,45 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#contexte">Contexte</a><ul><li><a href="#schéma-dinfrastructure">Schéma d’infrastructure</a><ul><li><a href="#infrastructure-générale">Infrastructure générale</a></li><li><a href="#vlan-informatique">VLAN informatique</a></li></ul></li></ul></li></ul></li><li><a href="#déploiement-de-glpi">Déploiement de GLPI</a><ul><li><a href="#prérequis">Prérequis</a></li><li><a href="#installation-des-prérequis">Installation des prérequis</a><ul><li><a href="#paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</a></li></ul></li><li><a href="#installation-de-glpi">Installation de GLPI</a><ul><li><a href="#paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</a></li><li><a href="#règles-dattribution-de-profil">Règles d’attribution de profil</a></li><li><a href="#catégories-de-tickets">Catégories de tickets</a></li></ul></li></ul></li><li><a href="#tests-et-validation-de-linstallation">Tests et validation de l’installation</a><ul><li><a href="#connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</a></li><li><a href="#connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</a></li></ul></li><li><a href="#annexes">Annexes</a><ul><li><a href="#fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</a></li><li><a href="#procédure-de-création-de-ticket">Procédure de création de ticket</a></li><li><a href="#procédure-de-résolution-dincident">Procédure de résolution d’incident</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#contexte">Contexte</a></li><li><a href="#annexes">Annexes</a><ul><li><a href="#fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</a></li><li><a href="#procédure-dutilisation-de-glpi-à-destination-des-utilisateurs">Procédure d’utilisation de GLPI à destination des utilisateurs</a></li><li><a href="#procédure-de-résolution-dincident-à-destination-des-techniciens">Procédure de résolution d’incident à destination des techniciens</a></li><li><a href="#schémas-dinfrastructure">Schémas d’infrastructure</a><ul><li><a href="#infrastructure-générale">Infrastructure générale</a></li><li><a href="#vlan-informatique">VLAN informatique</a></li></ul></li></ul></li><li><a href="#déploiement-de-glpi">Déploiement de GLPI</a><ul><li><a href="#prérequis">Prérequis</a></li><li><a href="#installation-des-prérequis">Installation des prérequis</a><ul><li><a href="#paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</a></li></ul></li><li><a href="#installation-de-glpi">Installation de GLPI</a><ul><li><a href="#paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</a></li><li><a href="#règles-dattribution-de-profil">Règles d’attribution de profil</a></li><li><a href="#catégories-de-tickets">Catégories de tickets</a></li></ul></li></ul></li><li><a href="#tests-et-validation-de-linstallation">Tests et validation de l’installation</a><ul><li><a href="#connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</a></li><li><a href="#connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
         <h1 id="mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</h1>
 
-<p><img src="https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png" alt="" /></p>
+<p><img src="https://www.linuxtricks.fr/upload/logo-glpi.png" alt="" /></p>
 
 <h2 id="contexte">Contexte</h2>
-<blockquote>
-  <p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
-Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d’expliquer l’utilisation de l’outil.</p>
-</blockquote>
 
-<h3 id="schéma-dinfrastructure">Schéma d’infrastructure</h3>
-<p>Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN2)</p>
+<p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d’expliquer l’utilisation de l’outil.</p>
+
+<h2 id="annexes">Annexes</h2>
+
+<p><em>Téléchargements des documents relatifs à la situation.</em></p>
+
+<h3 id="fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</h3>
+
+<h3 id="procédure-dutilisation-de-glpi-à-destination-des-utilisateurs">Procédure d’utilisation de GLPI à destination des utilisateurs</h3>
+
+<h3 id="procédure-de-résolution-dincident-à-destination-des-techniciens">Procédure de résolution d’incident à destination des techniciens</h3>
+
+<h3 id="schémas-dinfrastructure">Schémas d’infrastructure</h3>
+
+<p><em>Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN 2).</em></p>
 
 <h4 id="infrastructure-générale">Infrastructure générale</h4>
+
 <p><img src="/bts/_pages/exam/infra.png" alt="" /></p>
 
 <h4 id="vlan-informatique">VLAN informatique</h4>
+
 <p><img src="/bts/_pages/exam/vlan2.png" alt="" /></p>
 
-<h1 id="déploiement-de-glpi">Déploiement de GLPI</h1>
+<h2 id="déploiement-de-glpi">Déploiement de GLPI</h2>
 
-<h2 id="prérequis">Prérequis</h2>
+<h3 id="prérequis">Prérequis</h3>
 
 <p>GLPI nécessite l’installation de dépendances pour fonctionner, à savoir :</p>
 
@@ -345,7 +357,7 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 
 <p>La synchronisation LDAP permettant d’importer les utilisateurs du domaine depuis l’annuaire Active Directory, elle nécessite un contrôleur de domaine déployé et fonctionnel. En outre, le serveur sur lequel GLPI est déployé doit être en mesure de communiquer avec le serveur AD. Dans notre contexte, c’est effectivement le cas.</p>
 
-<h2 id="installation-des-prérequis">Installation des prérequis</h2>
+<h3 id="installation-des-prérequis">Installation des prérequis</h3>
 
 <p>L’installation des prérequis se fait en déployant leurs paquets :
 <code class="language-plaintext highlighter-rouge">sudo apt-get install -y apache2 perl php-ldap php-imap php-apcu php-xmlrpc php-cas php-mysqli php-mbstring php-curl php-gd php-simplexml php-xml php-intl php-zip php-bz2 mariadb-server</code></p>
@@ -356,7 +368,7 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 <p>On vérifie le fonctionnement du serveur web (Apache2) via l’adresse de la boucle locale:
 <img src="/bts/_pages/exam/imgs/apache.png" alt="" /></p>
 
-<h3 id="paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</h3>
+<h4 id="paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</h4>
 
 <p>On sécurise l’installation du serveur MariaDB:
 <code class="language-plaintext highlighter-rouge">sudo mysql_secure_installation</code>
@@ -365,7 +377,8 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 <p>On créee la base de donnée et l’user autorisé à y accéder:
 <img src="/bts/_pages/exam/imgs/user_dbase.png" alt="" /></p>
 
-<h2 id="installation-de-glpi">Installation de GLPI</h2>
+<h3 id="installation-de-glpi">Installation de GLPI</h3>
+
 <p>Il faut récupérer la dernière version de GLPI disponible sur le site du projet à cette adresse : <a href="https://glpi-project.org/fr/telechargements/">https://glpi-project.org/fr/telechargements/</a></p>
 
 <p>A l’heure ou je rédige ses lignes, la dernière version en date est la 9.5.7. Adapter les commandes suivantes en fonction de la dernière version mise à jour:</p>
@@ -380,7 +393,8 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 
 <p>Poursuivre l’installation, puis se connecter avec les ID administrateurs par défaut (GLPI/GLPI) afin de paramétrer le logiciel.</p>
 
-<h3 id="paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</h3>
+<h4 id="paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</h4>
+
 <p>La synchronisation LDAP permet d’importer les utilisateurs d’un serveur AD dans la base GLPI. Elle permet entre autres aux utilisateurs de s’identifier par leur identifiants du domaine. Ce paramétrage est très facile à faire dans GLPI. Il suffit de se rendre via l’interface de GLPI dans Configuration&gt;Authentification&gt;Annuaires LDAP et d’y inscrire les informations comme ceci:
 <img src="/bts/_pages/exam/imgs/ldap.png" alt="" /></p>
 
@@ -390,7 +404,8 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 <p>Et importer les users:
 <img src="/bts/_pages/exam/imgs/ldap_users.png" alt="" /></p>
 
-<h3 id="règles-dattribution-de-profil">Règles d’attribution de profil</h3>
+<h4 id="règles-dattribution-de-profil">Règles d’attribution de profil</h4>
+
 <p>Pour les besoins de la M2L, j’ai créé deux profils GLPI qui octroye différents droits en fonction du besoin.</p>
 
 <table>
@@ -439,17 +454,20 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 On lui attribue le profil GLPI Technicien</p>
 </blockquote>
 
-<h3 id="catégories-de-tickets">Catégories de tickets</h3>
+<h4 id="catégories-de-tickets">Catégories de tickets</h4>
+
 <p>Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de proposer à l’utilisateur de sélectionner une catégorie parmi une liste préétablie. Ces catégories sont modifiables via la configuration des intitulés, Catégories ITIL :
 <img src="/bts/_pages/exam/imgs/itil.png" alt="" /></p>
 
-<h1 id="tests-et-validation-de-linstallation">Tests et validation de l’installation</h1>
+<h2 id="tests-et-validation-de-linstallation">Tests et validation de l’installation</h2>
 
 <p>Le comportement attendu est:</p>
 
 <blockquote>
   <ul>
-    <li>GLPI est accessible depuis l’adresse IP du serveur : http://172.16.2.56/glpi</li>
+    <li>
+      <p>GLPI est accessible depuis l’adresse IP du serveur : <a href="http://172.16.2.56/glpi">http://172.16.2.56/glpi</a></p>
+    </li>
     <li>Un utilisateur membre du domaine peut se connecter sur GLPI</li>
     <li>Il est en mesure de créer un ticket et de lui attribuer une catégorie</li>
     <li>Un technicien est en mesure de se connecter sur GLPI</li>
@@ -457,17 +475,9 @@ On lui attribue le profil GLPI Technicien</p>
   </ul>
 </blockquote>
 
-<h2 id="connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</h2>
+<h3 id="connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</h3>
 
-<h2 id="connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</h2>
-
-<h1 id="annexes">Annexes</h1>
-
-<h2 id="fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</h2>
-
-<h2 id="procédure-de-création-de-ticket">Procédure de création de ticket</h2>
-
-<h2 id="procédure-de-résolution-dincident">Procédure de résolution d’incident</h2>
+<h3 id="connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</h3>
 
 
         

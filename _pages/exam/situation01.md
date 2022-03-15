@@ -13,16 +13,26 @@ toc_icon: "cog"
 ---
 # Mise en place d’une solution de gestion des incidents avec GLPI
 
-![](https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png)
+![](https://www.linuxtricks.fr/upload/logo-glpi.png)
 
 ## Contexte
 
-> La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
+La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées.
 Dans le cadre d’un plan d’amélioration générale de son infrastructure, la M2L souhaite se doter d’un outil de gestion d’incident lui permettant d’améliorer le support aux utilisateurs. En outre, une procédure détaillée devra être rédigée et remise aux techniciens et utilisateurs afin d'expliquer l'utilisation de l'outil.
 
-### Schéma d'infrastructure
+## Annexes
 
-Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN2)
+_Téléchargements des documents relatifs à la situation._
+
+### Fiche situation professionnelle E5
+
+### Procédure d'utilisation de GLPI à destination des utilisateurs
+
+### Procédure de résolution d'incident à destination des techniciens
+
+### Schémas d'infrastructure
+
+_Le serveur GLPI est situé dans le VLAN informatique de la M2L (VLAN 2)._
 
 #### Infrastructure générale
 
@@ -131,10 +141,4 @@ Le comportement attendu est:
 
 ### Connexion et attribution d'un ticket (technicien)
 
-## Annexes
 
-### Fiche situation professionnelle E5
-
-### Procédure de création de ticket
-
-### Procédure de résolution d'incident
