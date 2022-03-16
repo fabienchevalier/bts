@@ -306,7 +306,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#contexte">Contexte</a></li><li><a href="#annexes">Annexes</a><ul><li><a href="#fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</a></li><li><a href="#procédure-dutilisation-de-glpi-à-destination-des-utilisateurs">Procédure d’utilisation de GLPI à destination des utilisateurs</a></li><li><a href="#procédure-de-résolution-dincident-à-destination-des-techniciens">Procédure de résolution d’incident à destination des techniciens</a></li><li><a href="#schémas-dinfrastructure">Schémas d’infrastructure</a><ul><li><a href="#infrastructure-générale">Infrastructure générale</a></li><li><a href="#vlan-informatique">VLAN informatique</a></li></ul></li></ul></li><li><a href="#déploiement-de-glpi">Déploiement de GLPI</a><ul><li><a href="#prérequis">Prérequis</a></li><li><a href="#installation-des-prérequis">Installation des prérequis</a><ul><li><a href="#paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</a></li></ul></li><li><a href="#installation-de-glpi">Installation de GLPI</a><ul><li><a href="#paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</a></li><li><a href="#règles-dattribution-de-profil">Règles d’attribution de profil</a></li><li><a href="#catégories-de-tickets">Catégories de tickets</a></li></ul></li></ul></li><li><a href="#tests-et-validation-de-linstallation">Tests et validation de l’installation</a><ul><li><a href="#connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</a></li><li><a href="#connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</a></li></ul></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#mise-en-place-dune-solution-de-gestion-des-incidents-avec-glpi">Mise en place d’une solution de gestion des incidents avec GLPI</a><ul><li><a href="#contexte">Contexte</a></li><li><a href="#annexes">Annexes</a><ul><li><a href="#fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</a></li><li><a href="#procédure-dutilisation-de-glpi-à-destination-des-utilisateurs">Procédure d’utilisation de GLPI à destination des utilisateurs</a></li><li><a href="#procédure-de-résolution-dincident-à-destination-des-techniciens">Procédure de résolution d’incident à destination des techniciens</a></li><li><a href="#schémas-dinfrastructure">Schémas d’infrastructure</a><ul><li><a href="#infrastructure-générale">Infrastructure générale</a></li><li><a href="#vlan-informatique">VLAN informatique</a></li></ul></li></ul></li><li><a href="#déploiement-de-glpi">Déploiement de GLPI</a><ul><li><a href="#prérequis">Prérequis</a></li><li><a href="#installation-des-prérequis">Installation des prérequis</a><ul><li><a href="#paramétrage-de-la-base-de-donnée">Paramétrage de la base de donnée</a></li></ul></li><li><a href="#installation-de-glpi">Installation de GLPI</a><ul><li><a href="#paramétrage-de-la-synchronisation-ldap">Paramétrage de la synchronisation LDAP</a></li><li><a href="#paramétrage-du-dns">Paramétrage du DNS</a></li><li><a href="#règles-dattribution-de-profil">Règles d’attribution de profil</a></li><li><a href="#catégories-de-tickets">Catégories de tickets</a></li></ul></li></ul></li><li><a href="#tests-et-validation-de-linstallation">Tests et validation de l’installation</a><ul><li><a href="#connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</a></li><li><a href="#connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -404,6 +404,14 @@ Dans le cadre d’un plan d’amélioration générale de son infrastructure, la
 <p>Et importer les users:
 <img src="/bts/_pages/exam/imgs/ldap_users.png" alt="" /></p>
 
+<h4 id="paramétrage-du-dns">Paramétrage du DNS</h4>
+
+<p>Afin de rendre le serveur GLPI accessible depuis une URL dans l’intranet de la M2L, il faut paramétrer le serveur DNS situé sur l’AD de la M2L. Pour ce faire, on crée un nouvel enregistrement de type A dans la zone DNS m2l.lan:
+<img src="/bts/_pages/exam/imgs/dns.png" alt="" /></p>
+
+<p>Une fois cette option entrée, GLPI est accessible depuis l’adresse http://support.m2l.lan/glpi:
+<img src="/bts/_pages/exam/imgs/dns.png" alt="" /></p>
+
 <h4 id="règles-dattribution-de-profil">Règles d’attribution de profil</h4>
 
 <p>Pour les besoins de la M2L, j’ai créé deux profils GLPI qui octroye différents droits en fonction du besoin.</p>
@@ -463,22 +471,31 @@ On lui attribue le profil GLPI Technicien</p>
 
 <p>Le comportement attendu est:</p>
 
-<blockquote>
-  <ul>
-    <li>
-      <p>GLPI est accessible depuis l’adresse IP du serveur : <a href="http://172.16.2.56/glpi">http://172.16.2.56/glpi</a></p>
-    </li>
-    <li>Un utilisateur membre du domaine peut se connecter sur GLPI</li>
-    <li>Il est en mesure de créer un ticket et de lui attribuer une catégorie</li>
-    <li>Un technicien est en mesure de se connecter sur GLPI</li>
-    <li>Il peut s’attribuer un ticket, et y répondre</li>
-  </ul>
-</blockquote>
+<ul>
+  <li>GLPI est accessible depuis cette url : http://support.m2l.lan/glpi</li>
+  <li>Un utilisateur membre du domaine peut se connecter sur GLPI</li>
+  <li>Il est en mesure de créer un ticket et de lui attribuer une catégorie</li>
+  <li>Un technicien est en mesure de se connecter sur GLPI</li>
+  <li>Il peut s’attribuer un ticket, et y répondre</li>
+</ul>
 
 <h3 id="connexion-et-création-dun-ticket-utilisateur">Connexion et création d’un ticket (utilisateur)</h3>
 
+<p>Sophia Robert se connecte sur GLPI avec ses identifiants personnels:
+<img src="/bts/_pages/exam/imgs/rsophia_co.png" alt="" />
+Elle expose son problème:
+<img src="/bts/_pages/exam/imgs/rsophia_ticket.png" alt="" />
+Son ticket est désormais enregistré:
+<img src="/bts/_pages/exam/imgs/rsophia_ok.png" alt="" /></p>
+
 <h3 id="connexion-et-attribution-dun-ticket-technicien">Connexion et attribution d’un ticket (technicien)</h3>
 
+<p>Le technicien se connecte à son portail GLPI:
+<img src="/bts/_pages/exam/imgs/tech_co.png" alt="" />
+Dans l’onglet Assistance, il aperçoit un ticket entrant:
+<img src="/bts/_pages/exam/imgs/tech_attribue.png" alt="" />
+Il se l’attribue, et est en mesure de traiter et de répondre le problème:
+<img src="/bts/_pages/exam/imgs/tech_traite.png" alt="" /></p>
 
         
       </section>

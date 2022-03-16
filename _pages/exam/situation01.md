@@ -102,6 +102,14 @@ On peut ensuite tester la configuration:
 Et importer les users:
 ![](/bts/_pages/exam/imgs/ldap_users.png)
 
+#### Paramétrage du DNS
+
+Afin de rendre le serveur GLPI accessible depuis une URL dans l'intranet de la M2L, il faut paramétrer le serveur DNS situé sur l'AD de la M2L. Pour ce faire, on crée un nouvel enregistrement de type A dans la zone DNS m2l.lan:
+![](/bts/_pages/exam/imgs/dns.png)
+
+Une fois cette option entrée, GLPI est accessible depuis l'adresse http://support.m2l.lan/glpi:
+![](/bts/_pages/exam/imgs/dns.png)
+
 #### Règles d'attribution de profil
 
 Pour les besoins de la M2L, j'ai créé deux profils GLPI qui octroye différents droits en fonction du besoin.
@@ -130,8 +138,7 @@ Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de prop
 
 Le comportement attendu est:
 
->- GLPI est accessible depuis l'adresse IP du serveur : <http://172.16.2.56/glpi>
->
+- GLPI est accessible depuis cette url : http://support.m2l.lan/glpi
 - Un utilisateur membre du domaine peut se connecter sur GLPI
 - Il est en mesure de créer un ticket et de lui attribuer une catégorie
 - Un technicien est en mesure de se connecter sur GLPI
@@ -139,6 +146,18 @@ Le comportement attendu est:
 
 ### Connexion et création d'un ticket (utilisateur)
 
+Sophia Robert se connecte sur GLPI avec ses identifiants personnels:
+![](/bts/_pages/exam/imgs/rsophia_co.png)
+Elle expose son problème:
+![](/bts/_pages/exam/imgs/rsophia_ticket.png)
+Son ticket est désormais enregistré:
+![](/bts/_pages/exam/imgs/rsophia_ok.png)
+
 ### Connexion et attribution d'un ticket (technicien)
 
-
+Le technicien se connecte à son portail GLPI:
+![](/bts/_pages/exam/imgs/tech_co.png)
+Dans l'onglet Assistance, il aperçoit un ticket entrant:
+![](/bts/_pages/exam/imgs/tech_attribue.png)
+Il se l'attribue, et est en mesure de traiter et de répondre le problème:
+![](/bts/_pages/exam/imgs/tech_traite.png)
