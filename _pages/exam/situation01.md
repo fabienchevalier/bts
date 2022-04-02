@@ -53,8 +53,6 @@ GLPI nécessite l'installation de dépendances pour fonctionner, à savoir :
 - Une base de données (MySQL ou MariaDB)
 - Un serveur web (pile LAMP)
 
-La synchronisation LDAP permettant d’importer les utilisateurs du domaine depuis l’annuaire Active Directory, elle nécessite un contrôleur de domaine déployé et fonctionnel. En outre, le serveur sur lequel GLPI est déployé doit être en mesure de communiquer avec le serveur AD. Dans notre contexte, c'est effectivement le cas.
-
 ### Installation des prérequis
 
 L'installation des prérequis se fait en déployant leurs paquets :
@@ -91,16 +89,6 @@ La suite de l'installation se poursuit vers l'interface web. A l'étape 1, entre
 
 Poursuivre l'installation, puis se connecter avec les ID administrateurs par défaut (GLPI/GLPI) afin de paramétrer le logiciel.
 
-#### Paramétrage de la synchronisation LDAP
-
-La synchronisation LDAP permet d'importer les utilisateurs d'un serveur AD dans la base GLPI. Elle permet entre autres aux utilisateurs de s'identifier par leur identifiants du domaine. Ce paramétrage est très facile à faire dans GLPI. Il suffit de se rendre via l'interface de GLPI dans Configuration>Authentification>Annuaires LDAP et d'y inscrire les informations comme ceci:
-![](/bts/_pages/exam/imgs/ldap.png)
-
-On peut ensuite tester la configuration:
-![](/bts/_pages/exam/imgs/ldap_config.png)
-
-Et importer les users:
-![](/bts/_pages/exam/imgs/ldap_users.png)
 
 #### Paramétrage du DNS
 
@@ -122,13 +110,6 @@ Pour les besoins de la M2L, j'ai créé deux profils GLPI qui octroye différent
 |Attribution d'un ticket|Non|Oui|
 |Clôturer un ticket|Non|Oui|
 
-Ces profils sont attribués automatiquement aux utilisateurs en fonction de leur groupe d'appartenance dans l'AD. Les règles GLPI permettent cela en assignant un profil selon critères:
-
->Si un utilisateur est membre du groupe AD Technicien N1 alors:
-![](/bts/_pages/exam/imgs/regle_tech.png)
-![](/bts/_pages/exam/imgs/profil_tech.png)
-On lui attribue le profil GLPI Technicien
-
 #### Catégories de tickets
 
 Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de proposer à l’utilisateur de sélectionner une catégorie parmi une liste préétablie. Ces catégories sont modifiables via la configuration des intitulés, Catégories ITIL :
@@ -139,7 +120,6 @@ Pour faciliter le tri dans les demandes d’incidents, il est plus aisé de prop
 Le comportement attendu est:
 
 - GLPI est accessible depuis cette url : http://support.m2l.lan/glpi
-- Un utilisateur membre du domaine peut se connecter sur GLPI
 - Il est en mesure de créer un ticket et de lui attribuer une catégorie
 - Un technicien est en mesure de se connecter sur GLPI
 - Il peut s'attribuer un ticket, et y répondre
