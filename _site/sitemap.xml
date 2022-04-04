@@ -49,6 +49,10 @@
 <loc>http://localhost:4000/bts/veille/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/bts/_pages/exam/situation01.pdf</loc>
+<lastmod>2022-03-31T15:11:36+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/bts/assets/files/atelier/ecole/01-ldap_active_directory.pdf</loc>
 <lastmod>2022-01-31T19:54:10+01:00</lastmod>
 </url>
@@ -135,6 +139,10 @@
 <url>
 <loc>http://localhost:4000/bts/assets/files/atelier/entreprise/13-scan_over_ftp.pdf</loc>
 <lastmod>2022-01-31T21:49:45+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/bts/assets/files/e5/situation_01/Situation_E5_1_GLPI.pdf</loc>
+<lastmod>2022-04-04T19:03:43+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/bts/assets/files/e5/situation_01/installation.pdf</loc>

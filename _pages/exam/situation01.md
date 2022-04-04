@@ -26,6 +26,8 @@ _Téléchargements des documents relatifs à la situation._
 
 ### Fiche situation professionnelle E5
 
+[Télécharger](/bts/assets/files/e5/situation_01/Situation_E5_1_GLPI.pdf)
+
 ### Procédure d'utilisation de GLPI à destination des utilisateurs
 
 ### Procédure de résolution d'incident à destination des techniciens
