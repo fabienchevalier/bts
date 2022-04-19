@@ -30,7 +30,7 @@ Cette section regroupe l'ensemble des activités réalisés au cours de ma forma
 > Il est possible de télécharger l'archive complète contenant l'ensemble des projets (école et entreprise) via le bouton situé en haut de page
 
 - [Activité 01 : Déploiement d'un serveur LDAP Active Directory](/bts/assets/files/atelier/ecole/01-ldap_active_directory.pdf)
-- [Activité 02 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/02-veille.pdf)
+- [Activité 02 : Mise à niveau du parc informatique de la M2L](/bts/assets/files/ppe/a_ppe1-1.pdf)
 - [Activité 03 : Automatisation de la création d'utilisateurs dans l'AD avec PowerShell](/bts/assets/files/atelier/ecole/03-ad_powershell_csv.pdf)
   - _[AdUser.ps1](/bts/assets/files/atelier/ecole/03-ad_user.ps1)_
 - [Activité 04 : Mise en place d'un site web portofolio avec GitHub Pages et Jekyll](/bts/assets/files/atelier/ecole/04-mise_en_place_site_web.pdf)
@@ -42,8 +42,8 @@ Cette section regroupe l'ensemble des activités réalisés au cours de ma forma
   - _[toip.pkt](/bts/assets/files/atelier/ecole/08-voip.pkt)_
 - [Activité 09 : Mise en place du routage dynamique avec le protocole OSPF](/bts/assets/files/atelier/ecole/09-ospf_cisco.pdf)
   - _[ospf-hsrp.pkt](/bts//assets/files/atelier/09-ospf_cisco.pkt)
-- [Activité 10 : Mise en place d'un serveur LAMP conteneurisé avec Docker](/bts/assets/files/atelier/ecole/10-lamp_docker.pdf)
-- [Activité 11 : Gestion de projet : mise en place de l'infrastructure pour l'épreuve E5](/bts/assets/files/atelier/ecole/11-gestion_projet.pdf)
+- [Activité 10 : Supervision de switch et routeur CISCO avec EON et Nagios](/bts/assets/files/atelier/ecole/10-nagios_cisco.pdf)
+- [Activité 11 : Mise en place de ma veille informatique et juridique](/bts/assets/files/atelier/ecole/11-veille.pdf)
 
 ## Activités réalisées en entreprise
 

@@ -1,0 +1,126 @@
+Building configuration...
+
+Current configuration : 1788 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname SWDMZ
+!
+enable password cisco
+!
+username cisco password 0 cisco
+!
+vlan 2
+ name INFO
+!
+vlan 20
+ name DMZ
+ip subnet-zero
+ip domain-name M2L.LAN
+vtp mode transparent
+!
+spanning-tree extend system-id
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 20
+ switchport mode access
+ no ip address
+!
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+ no ip address
+!
+interface FastEthernet0/3
+ no ip address
+!
+interface FastEthernet0/4
+ no ip address
+!
+interface FastEthernet0/5
+ no ip address
+!
+interface FastEthernet0/6
+ no ip address
+!
+interface FastEthernet0/7
+ no ip address
+!
+interface FastEthernet0/8
+ no ip address
+!
+interface FastEthernet0/9
+ no ip address
+!
+interface FastEthernet0/10
+ no ip address
+!
+interface FastEthernet0/11
+ no ip address
+!
+interface FastEthernet0/12
+ no ip address
+!
+interface FastEthernet0/13
+ no ip address
+!
+interface FastEthernet0/14
+ no ip address
+!
+interface FastEthernet0/15
+ no ip address
+!
+interface FastEthernet0/16
+ no ip address
+!
+interface FastEthernet0/17
+ no ip address
+!
+interface FastEthernet0/18
+ no ip address
+!
+interface FastEthernet0/19
+ no ip address
+!
+interface FastEthernet0/20
+ no ip address
+!
+interface FastEthernet0/21
+ no ip address
+!
+interface FastEthernet0/22
+ no ip address
+!
+interface FastEthernet0/23
+ switchport mode trunk
+ no ip address
+!
+interface FastEthernet0/24
+ switchport mode trunk
+ no ip address
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan20
+ ip address 192.168.16.13 255.255.255.240
+ no ip route-cache
+!
+ip default-gateway 192.168.16.14
+ip http server
+!
+!
+line con 0
+line vty 0 4
+ login local
+line vty 5 15
+ login
+!
+end

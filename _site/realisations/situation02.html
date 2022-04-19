@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Préparation de l’arrivée d’une nouvelle ligue dans le réseau de la M2L - Portofolio</title>
-<meta name="description" content="Documentation complète précisant et décrivant la configuration du routage inter-VLAN">
+<meta name="description" content="Documentation complète précisant et décrivant la configuration réseau de la M2L">
 
 
   <meta name="author" content="Fabien CHEVALIER">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="http://localhost:4000/bts/realisations/situation02">
 
 
-  <meta property="og:description" content="Documentation complète précisant et décrivant la configuration du routage inter-VLAN">
+  <meta property="og:description" content="Documentation complète précisant et décrivant la configuration réseau de la M2L">
 
 
 
@@ -159,7 +159,7 @@
         
       </h1>
       
-        <p class="page__lead">Documentation complète précisant et décrivant la configuration du routage inter-VLAN
+        <p class="page__lead">Documentation complète précisant et décrivant la configuration réseau de la M2L
 </p>
       
       
@@ -294,7 +294,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Préparation de l’arrivée d’une nouvelle ligue dans le réseau de la M2L">
-    <meta itemprop="description" content="Documentation complète précisant et décrivant la configuration du routage inter-VLAN">
+    <meta itemprop="description" content="Documentation complète précisant et décrivant la configuration réseau de la M2L">
     
     
 
@@ -306,12 +306,12 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table des matières</h4></header>
-              <ul class="toc__menu"><li><a href="#préparation-de-larrivée-dune-nouvelle-ligue-dans-le-réseau-de-la-m2l">Préparation de l’arrivée d’une nouvelle ligue dans le réseau de la M2L</a><ul><li><a href="#contexte">Contexte</a></li><li><a href="#annexes">Annexes</a><ul><li><a href="#fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</a></li><li><a href="#schéma-de-linfrastructure-réseau-de-la-m2l">Schéma de l’infrastructure réseau de la M2L</a></li></ul></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#intégration-dune-nouvelle-ligue-dans-linfrastructure-réseau-de-la-m2l">Intégration d’une nouvelle ligue dans l’infrastructure réseau de la M2L</a><ul><li><a href="#contexte">Contexte</a></li><li><a href="#annexes">Annexes</a></li><li><a href="#configuration-du-routeur-rm2l">Configuration du routeur RM2L</a><ul><li><a href="#détail-de-la-configuration-du-routeur-rm2l">Détail de la configuration du routeur RM2L</a></li><li><a href="#détail-de-la-configuration-du-switch-sw1lig">Détail de la configuration du switch SW1LIG</a></li><li><a href="#détail-de-la-configuration-du-switch-sw2lig">Détail de la configuration du switch SW2LIG</a></li><li><a href="#détail-de-la-configuration-du-switch-sw3lig">Détail de la configuration du switch SW3LIG</a></li><li><a href="#détail-de-la-configuration-du-switch-swm2l">Détail de la configuration du switch SWM2L</a></li><li><a href="#détail-de-la-configuration-du-switch-swdm2">Détail de la configuration du switch SWDM2</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="préparation-de-larrivée-dune-nouvelle-ligue-dans-le-réseau-de-la-m2l">Préparation de l’arrivée d’une nouvelle ligue dans le réseau de la M2L</h1>
+        <h1 id="intégration-dune-nouvelle-ligue-dans-linfrastructure-réseau-de-la-m2l">Intégration d’une nouvelle ligue dans l’infrastructure réseau de la M2L</h1>
 
 <h2 id="contexte">Contexte</h2>
 
@@ -322,13 +322,81 @@ Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de nivea
 
 <p><em>Téléchargements des documents relatifs à la situation.</em></p>
 
-<h3 id="fiche-situation-professionnelle-e5">Fiche situation professionnelle E5</h3>
+<ul>
+  <li>Fiche situation professionnelle E5 : <a href="">Télécharger</a></li>
+  <li>Dossier de l’infrastructure M2L : <a href="">Télécharger</a></li>
+  <li>Simulation PacketTracer du réseau : <a href="/bts/_pages/exam/cisco.pkt">Télécharger</a></li>
+  <li>Schéma de l’infrastructure réseau:
+<img src="/bts/_pages/exam/infra.png" alt="" /></li>
+</ul>
 
-<h3 id="schéma-de-linfrastructure-réseau-de-la-m2l">Schéma de l’infrastructure réseau de la M2L</h3>
+<h2 id="configuration-du-routeur-rm2l">Configuration du routeur RM2L</h2>
 
-<p><img src="/bts/_pages/exam/infra.png" alt="" /></p>
+<h3 id="détail-de-la-configuration-du-routeur-rm2l">Détail de la configuration du routeur RM2L</h3>
 
-<p>##</p>
+<p>Le routeur RM2L est configuré afin de :</p>
+
+<ul>
+  <li>Fournir une passerelle aux différents VLAN</li>
+  <li>Permettre l’accès à Internet via un NAT</li>
+  <li>Permettre un routage inter-vlan permettant aux différentes ligues d’obtenir une adresse IP via les serveurs DHCP situés sur le VLAN 2</li>
+  <li>Permettre un routage inter-vlan permettant aux différentes ligues d’accéder aux ressources situés à la DMZ</li>
+  <li>Permettre d’accéder aux ressources de la DMZ via l’extérieur sur les ports 80 et 21</li>
+  <li>Empêcher les communications inter-vlan non désirées via la mise en place d’ACL</li>
+</ul>
+
+<p>Le fichier de configuration est téléchargeable <a href="/bts/_pages/exam/RM2L.txt">en cliquant ici</a></p>
+
+<h3 id="détail-de-la-configuration-du-switch-sw1lig">Détail de la configuration du switch SW1LIG</h3>
+
+<ul>
+  <li>Accessible à distance via SSH sur l’adresse 172.16.2.53</li>
+  <li>Fait office de serveur VTP pour la synchronisation des VLAN</li>
+</ul>
+
+<p>Le fichier de de configuration est téléchargeable <a href="/bts/_pages/exam/SW1LIG.txt">en cliquant ici</a></p>
+
+<h3 id="détail-de-la-configuration-du-switch-sw2lig">Détail de la configuration du switch SW2LIG</h3>
+
+<ul>
+  <li>Accessible à distance via SSH sur l’adresse 172.16.2.54</li>
+  <li>Client VTP</li>
+  <li>Est relié via la technologie EtherChannel afin de mutualiser certains ports pour augmenter le débit</li>
+  <li>Le STP est configuré en mode PVST</li>
+</ul>
+
+<p>Le fichier de de configuration est téléchargeable <a href="/bts/_pages/exam/SW2LIG.txt">en cliquant ici</a></p>
+
+<h3 id="détail-de-la-configuration-du-switch-sw3lig">Détail de la configuration du switch SW3LIG</h3>
+
+<ul>
+  <li>Accessible à distance via SSH sur l’adresse 172.16.2.55</li>
+  <li>Client VTP</li>
+  <li>Est relié via la technologie EtherChannel afin de mutualiser certains ports pour augmenter le débit</li>
+  <li>Le STP est configuré en mode PVST</li>
+</ul>
+
+<p>Le fichier de de configuration est téléchargeable <a href="/bts/_pages/exam/SW3LIG.txt">en cliquant ici</a></p>
+
+<h3 id="détail-de-la-configuration-du-switch-swm2l">Détail de la configuration du switch SWM2L</h3>
+
+<ul>
+  <li>Accessible à distance via SSH sur l’adresse 172.16.2.56</li>
+  <li>Client VTP</li>
+  <li>Est relié via la technologie EtherChannel afin de mutualiser certains ports pour augmenter le débit</li>
+  <li>Le STP est configuré en mode PVST</li>
+</ul>
+
+<p>Le fichier de de configuration est téléchargeable <a href="/bts/_pages/exam/SWM2L.txt">en cliquant ici</a></p>
+
+<h3 id="détail-de-la-configuration-du-switch-swdm2">Détail de la configuration du switch SWDM2</h3>
+
+<ul>
+  <li>Accessible à distance via SSH sur l’adresse 192.168.16.13</li>
+  <li>Seulement le VLAN 20 y est renseigné car fait office de DMZ</li>
+</ul>
+
+<p>Le fichier de de configuration est téléchargeable <a href="/bts/_pages/exam/SWDMZ.txt">en cliquant ici</a></p>
 
         
       </section>

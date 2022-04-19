@@ -1,0 +1,199 @@
+Building configuration...
+
+Current configuration : 4596 bytes
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname SWM2L
+!
+boot-start-marker
+boot-end-marker
+!
+enable password cisco
+!
+username cisco password 0 cisco
+!
+!
+no aaa new-model
+system mtu routing 1546
+authentication mac-move permit
+ip subnet-zero
+ip domain-name M2L.LAN
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-4093534592
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-4093534592
+ revocation-check none
+ rsakeypair TP-self-signed-4093534592
+!
+!
+crypto pki certificate chain TP-self-signed-4093534592
+ certificate self-signed 01
+  30820245 308201AE A0030201 02020101 300D0609 2A864886 F70D0101 04050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 34303933 35333435 3932301E 170D3933 30333031 30303031
+  33375A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D34 30393335
+  33343539 3230819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  8100A5D8 78525A30 F346C516 598C4220 BF5DDC07 18C1861F 741D3A08 6F1268FF
+  54387DBD C2F3C617 97C35271 4302784B 136C2AFB 64CCEDC2 BD85A5B7 6E6F7781
+  5080011B 668502AA 47579412 9835ED16 ABFE226F CD3D16A3 4F07C23A 8329BCEA
+  972B31C7 854076ED 0F114319 90116CE4 ACFEF9CC E337F41A BF6A3A7B 829E86BC
+  4D450203 010001A3 6D306B30 0F060355 1D130101 FF040530 030101FF 30180603
+  551D1104 11300F82 0D53574D 324C2E4D 324C2E4C 414E301F 0603551D 23041830
+  168014F9 4E1DC8C9 381CA9BE 337BA066 4E38B9F6 40301A30 1D060355 1D0E0416
+  0414F94E 1DC8C938 1CA9BE33 7BA0664E 38B9F640 301A300D 06092A86 4886F70D
+  01010405 00038181 00370063 C59C163F 5F9AA50E A1D02824 9D9BE7BC ABD8A3A3
+  34BEC026 B9B268E7 84C03111 087A90C4 E6A4B2D4 959CEE49 94869B12 0A6787E4
+  26423333 4F9BBE06 304E45FE A50CC071 9085059B 2714D17B EC7EA7F9 70545959
+  735078AA 7456EA05 CD92B0A6 A90FB0FE 947D9A2D 9B46671C C50FA596 8E62B45A
+  F76BCE1E 797AE383 91
+  quit
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree etherchannel guard misconfig
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+!
+interface GigabitEthernet0/1
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/2
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/3
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/4
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/5
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/6
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/7
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/8
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/9
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/10
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/11
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/12
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/13
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/14
+ switchport access vlan 2
+ switchport mode access
+!
+interface GigabitEthernet0/15
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/16
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/17
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/18
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/19
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/20
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/21
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/22
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet0/23
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/24
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/25
+!
+interface GigabitEthernet0/26
+!
+interface GigabitEthernet0/27
+!
+interface GigabitEthernet0/28
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan2
+ ip address 172.16.2.52 255.255.255.192
+!
+ip classless
+ip http server
+ip http secure-server
+!
+!
+ip sla enable reaction-alerts
+!
+!
+!
+line con 0
+line vty 0 4
+ login local
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ login
+!
+end
