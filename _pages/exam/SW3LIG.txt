@@ -90,8 +90,12 @@ interface GigabitEthernet0/14
  switchport mode access
 !
 interface GigabitEthernet0/15
+ switchport access vlan 13
+ switchport mode access
 !
 interface GigabitEthernet0/16
+  switchport access vlan 13
+  switchport mode access
 !
 interface GigabitEthernet0/17
 !

@@ -22,8 +22,8 @@ Le réseau de la M2L est organisé en VLAN et comporte des commutateurs de nivea
 
 _Téléchargements des documents relatifs à la situation._
 
-* Fiche situation professionnelle E5 : [Télécharger]()
-* Dossier de l'infrastructure M2L : [Télécharger]()
+* Fiche situation professionnelle E5 : [Télécharger](/bts/_pages/exam/Situation_E5_2_commutation.pdf)
+* Dossier de l'infrastructure M2L : [Télécharger](/bts/_pages/exam/Infra_maj.pdf)
 * Simulation PacketTracer du réseau : [Télécharger](/bts/_pages/exam/cisco.pkt)
 * Schéma de l'infrastructure réseau:
 ![](/bts/_pages/exam/infra.png)
