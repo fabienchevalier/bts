@@ -30,7 +30,11 @@ _Téléchargements des documents relatifs à la situation._
 
 ### Procédure d'utilisation de GLPI à destination des utilisateurs
 
+[Télécharger](/bts/_pages/exam/declaration_user.pdf)
+
 ### Procédure de résolution d'incident à destination des techniciens
+
+[Télécharger](/bts/_pages/exam/declaration_tech.pdf)
 
 ### Schémas d'infrastructure
 
