@@ -24,7 +24,7 @@ _Téléchargements des documents relatifs à la situation._
 
 * Fiche situation professionnelle E5 : [Télécharger](/bts/_pages/exam/Situation_E5_2_commutation.pdf)
 * Dossier de l'infrastructure M2L : [Télécharger](/bts/_pages/exam/Infra_maj.pdf)
-* Simulation PacketTracer du réseau : [Télécharger](/bts/_pages/exam/cisco.pkt)
+* Simulation PacketTracer du réseau (Packet Tracer version 8.1) : [Télécharger](/bts/_pages/exam/cisco.pkt)
 * Schéma de l'infrastructure réseau:
 ![](/bts/_pages/exam/infra.png)
 
