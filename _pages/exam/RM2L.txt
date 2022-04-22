@@ -1,8 +1,6 @@
-Building configuration...
-
-Current configuration : 6374 bytes
+Current configuration : 6922 bytes
 !
-! Last configuration change at 02:52:39 UTC Mon Apr 26 2021 by cisco
+! Last configuration change at 01:15:41 UTC Mon May 3 2021 by cisco
 version 15.2
 service timestamps debug datetime msec
 service timestamps log datetime msec
@@ -79,7 +77,6 @@ interface GigabitEthernet0/1.3
  ip helper-address 172.16.2.61
  ip nat inside
  ip virtual-reassembly in
- ip access-group 10 out
 !
 interface GigabitEthernet0/1.4
  encapsulation dot1Q 12
@@ -88,7 +85,6 @@ interface GigabitEthernet0/1.4
  ip helper-address 172.16.2.61
  ip nat inside
  ip virtual-reassembly in
- ip access-group 11 out
 !
 interface GigabitEthernet0/1.5
  encapsulation dot1Q 20
@@ -107,9 +103,11 @@ interface GigabitEthernet0/1.6
 interface GigabitEthernet0/1.7
  encapsulation dot1Q 13
  ip address 172.16.13.62 255.255.255.192
- ip helper-address 172.16.2.61
  ip helper-address 172.16.2.60
- 
+ ip helper-address 172.16.2.61
+ ip nat inside
+ ip virtual-reassembly in
+!
 ip forward-protocol nd
 !
 no ip http server
@@ -121,9 +119,17 @@ ip nat inside source list 3 interface GigabitEthernet0/0 overload
 ip nat inside source list 4 interface GigabitEthernet0/0 overload
 ip nat inside source list 5 interface GigabitEthernet0/0 overload
 ip nat inside source list 6 interface GigabitEthernet0/0 overload
+ip nat inside source list 7 interface GigabitEthernet0/0 overload
+ip nat inside source list 8 interface GigabitEthernet0/0 overload
 ip nat inside source static tcp 192.168.16.1 21 192.168.80.41 21 extendable
 ip nat inside source static tcp 192.168.16.1 80 192.168.80.41 80 extendable
 ip route 0.0.0.0 0.0.0.0 192.168.80.1
+!
+ip access-list standard VLAN13
+ deny   172.16.10.0 0.0.0.63
+ deny   172.16.11.0 0.0.0.63
+ deny   172.16.12.0 0.0.0.63
+ permit any
 !
 access-list 1 permit 172.16.2.0 0.0.0.63
 access-list 2 permit 192.168.16.0 0.0.0.15
@@ -131,12 +137,160 @@ access-list 3 permit 172.16.10.0 0.0.0.63
 access-list 4 permit 172.16.11.0 0.0.0.63
 access-list 6 permit 172.16.3.0 0.0.0.63
 
-access-list 10 remark **Interdire la communication VLAN11/10**
-access-list 10 deny 172.16.11.0 0.0.0.63
-access-list 10 permit any
-access-list 11 remark **Interdire la communication VLAN12/10**
-access-list 11 deny 172.16.10.0 0.0.0.63
-access-list 11 permit any
+RLIG#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RLIG(config)#int giga
+RLIG(config)#int gigabitEthernet0/1.7
+RLIG(config-subif)#ip access-group VLAN13 out
+RLIG(config-subif)#exit
+RLIG(config)#exit
+RLIG#write
+Building configuration...
+[OK]
+RLIG#sh run
+Building configuration...
+
+Current configuration : 6950 bytes
+!
+! Last configuration change at 01:17:44 UTC Mon May 3 2021 by cisco
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname RLIG
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+no aaa new-model
+!
+ip cef
+!
+!
+!
+!
+!
+!
+ip domain name M2L.LAN
+no ipv6 cef
+multilink bundle-name authenticated
+!
+!
+!
+license udi pid CISCO1941/K9 sn FCZ1548C35A
+!
+!
+username bts password 0 btssio78
+username cisco password 0 cisco
+!
+!
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ ip address 192.168.80.40 255.255.255.0
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1.1
+ encapsulation dot1Q 2
+ ip address 172.16.2.62 255.255.255.192
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.2
+ encapsulation dot1Q 10
+ ip address 172.16.10.62 255.255.255.192
+ ip helper-address 172.16.2.61
+ ip helper-address 172.16.2.60
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.3
+ encapsulation dot1Q 11
+ ip address 172.16.11.62 255.255.255.192
+ ip helper-address 172.16.2.60
+ ip helper-address 172.16.2.61
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.4
+ encapsulation dot1Q 12
+ ip address 172.16.12.62 255.255.255.192
+ ip helper-address 172.16.2.60
+ ip helper-address 172.16.2.61
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.5
+ encapsulation dot1Q 20
+ ip address 192.168.16.14 255.255.255.240
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.6
+ encapsulation dot1Q 3
+ ip address 172.16.3.62 255.255.255.192
+ ip helper-address 172.16.2.60
+ ip helper-address 172.16.2.61
+ ip nat inside
+ ip virtual-reassembly in
+!
+interface GigabitEthernet0/1.7
+ encapsulation dot1Q 13
+ ip address 172.16.13.62 255.255.255.192
+ ip access-group VLAN13 out
+ ip helper-address 172.16.2.60
+ ip helper-address 172.16.2.61
+ ip nat inside
+ ip virtual-reassembly in
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
+ip nat inside source list 2 interface GigabitEthernet0/0 overload
+ip nat inside source list 3 interface GigabitEthernet0/0 overload
+ip nat inside source list 4 interface GigabitEthernet0/0 overload
+ip nat inside source list 5 interface GigabitEthernet0/0 overload
+ip nat inside source list 6 interface GigabitEthernet0/0 overload
+ip nat inside source list 7 interface GigabitEthernet0/0 overload
+ip nat inside source list 8 interface GigabitEthernet0/0 overload
+ip nat inside source static tcp 192.168.16.1 21 192.168.80.41 21 extendable
+ip nat inside source static tcp 192.168.16.1 80 192.168.80.41 80 extendable
+ip route 0.0.0.0 0.0.0.0 192.168.80.1
+!
+ip access-list standard VLAN13
+ deny   172.16.10.0 0.0.0.63
+ deny   172.16.11.0 0.0.0.63
+ deny   172.16.12.0 0.0.0.63
+ permit any
+!
+access-list 1 permit 172.16.2.0 0.0.0.63
+access-list 2 permit 192.168.16.0 0.0.0.15
+access-list 3 permit 172.16.10.0 0.0.0.63
+access-list 4 permit 172.16.11.0 0.0.0.63
+access-list 6 permit 172.16.3.0 0.0.0.63
+access-list 7 permit 172.16.12.0 0.0.0.63
+access-list 8 permit 172.16.13.0 0.0.0.63
 !
 !
 snmp-server community public RW
