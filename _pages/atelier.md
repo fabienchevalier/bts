@@ -56,7 +56,7 @@ Cette section regroupe l'ensemble des activités réalisés en entreprise en deu
 - [Activité 03 : Mise en place d'un hébergement client (Hyper-V/IpFire/OVH)](/bts/assets/files/atelier/entreprise/03-hebergement_client.pdf)
 - [Activité 04 : Migration d'une VM cliente sur un nouveau serveur](/bts/assets/files/atelier/entreprise/04-migration_hyperv.pdf)
 - [Activité 05 : Mise en place des sauvegardes VM et fichiers des clients hébergés](/bts/assets/files/atelier/entreprise/05-backup.pdf)
-- [Activité 06 : Mise en place de la réplication des machines virtuelles Hyper-V]()
+- [Activité 06 : Mise en place de la réplication des machines virtuelles Hyper-V](/bts/assets/files/atelier/entreprise/06-replication.pdf)
 - [Activité 07 : Planification d'une intervention sur site](/bts/assets/files/atelier/entreprise/07-planification.pdf)
 
 ### Deuxième année
